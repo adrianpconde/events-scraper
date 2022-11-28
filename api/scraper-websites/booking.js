@@ -4,7 +4,7 @@ async function booking() {
   const browser = await puppeteer.launch({
     executablePath:
       "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
-    headless: false,
+    headless: true,
     args: ["--incognito"],
   });
 
@@ -20,10 +20,10 @@ async function booking() {
 
   await page.goto("https://www.booking.com/attractions/");
 
-  // Cookies accepted:
+  // Cookies accepted (Not necessary with headless: true on puppeteer.launch):
 
-  await page.waitForSelector("#onetrust-accept-btn-handler");
-  await page.click("#onetrust-accept-btn-handler"); // cookies
+  // await page.waitForSelector("#onetrust-accept-btn-handler");
+  // await page.click("#onetrust-accept-btn-handler");
 
   function delay(time) {
     return new Promise(function (resolve) {
@@ -124,9 +124,9 @@ async function booking() {
     return acc;
   }, {});
 
-  return bookingData
-
   await context.close();
+
+  return bookingData
 }
 
 module.exports = {

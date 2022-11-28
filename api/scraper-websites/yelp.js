@@ -4,7 +4,7 @@ async function yelp() {
   const browser = await puppeteer.launch({
     executablePath:
       "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
-    headless: false,
+    headless: true,
     args: ["--incognito"],
   });
 
@@ -71,9 +71,9 @@ async function yelp() {
     return acc;
   }, {});
 
-  return yelpData;
-
   await context.close();
+
+  return yelpData;
 }
 
 module.exports = {

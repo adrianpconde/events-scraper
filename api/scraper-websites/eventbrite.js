@@ -4,7 +4,7 @@ async function eventbrite() {
   const browser = await puppeteer.launch({
     executablePath:
       "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
-    headless: false,
+    headless: true,
     args: ["--incognito"],
   });
 
@@ -95,10 +95,10 @@ async function eventbrite() {
     acc[item.title] = item;
     return acc;
   }, {});
-  
-  return eventbriteData
 
   await context.close();
+
+  return eventbriteData
 }
 
 module.exports = {

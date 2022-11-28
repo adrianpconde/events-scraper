@@ -4,7 +4,7 @@ async function tripadvisor() {
   const browser = await puppeteer.launch({
     executablePath:
       "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
-    headless: false,
+    headless: true,
     args: ["--incognito"],
   });
 
@@ -111,9 +111,9 @@ async function tripadvisor() {
     return acc;
   }, {});
 
-  return tripadvisorData;
-
   await context.close();
+
+  return tripadvisorData;
 }
 
 module.exports = {

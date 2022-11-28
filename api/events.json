@@ -1,0 +1,524 @@
+{
+  "Rijksmuseum": {
+    "title": "Rijksmuseum",
+    "time": "2-3 hours",
+    "price": "from $33.73",
+    "category": "Art Museums"
+  },
+  "Anne Frank House": {
+    "title": "Anne Frank House",
+    "time": "1-2 hours",
+    "price": "N.A.",
+    "category": "Speciality Museums"
+  },
+  "Van Gogh Museum": {
+    "title": "Van Gogh Museum",
+    "time": "1-2 hours",
+    "price": "from $28.46",
+    "category": "Art Museums"
+  },
+  "The Jordaan": {
+    "title": "The Jordaan",
+    "time": "2-3 hours",
+    "price": "N.A.",
+    "category": "Neighborhoods"
+  },
+  "A'dam Lookout": {
+    "title": "A'dam Lookout",
+    "time": "1-2 hours",
+    "price": "N.A.",
+    "category": "Observation Decks & Towers"
+  },
+  "Body Worlds": {
+    "title": "Body Worlds",
+    "time": "1-2 hours",
+    "price": "from $23.71",
+    "category": "Speciality Museums • Science Museums"
+  },
+  "Vondelpark": {
+    "title": "Vondelpark",
+    "time": "2-3 hours",
+    "price": "N.A.",
+    "category": "Parks"
+  },
+  "Moco Museum Amsterdam": {
+    "title": "Moco Museum Amsterdam",
+    "time": "1-2 hours",
+    "price": "N.A.",
+    "category": "Art Museums"
+  },
+  "Museum Het Rembrandthuis": {
+    "title": "Museum Het Rembrandthuis",
+    "time": "N.A.",
+    "price": "N.A.",
+    "category": "Historic Sites • Art Museums"
+  },
+  "ARTIS Amsterdam Royal Zoo": {
+    "title": "ARTIS Amsterdam Royal Zoo",
+    "time": "2-3 hours",
+    "price": "from $39.87",
+    "category": "Zoos"
+  },
+  "Centraal Station": {
+    "title": "Centraal Station",
+    "time": "N.A.",
+    "price": "N.A.",
+    "category": "Points of Interest & Landmarks • Architectural Buildings • Public Transportation Systems"
+  },
+  "Museum Ons'Lieve Heer Op Solder": {
+    "title": "Museum Ons'Lieve Heer Op Solder",
+    "time": "1-2 hours",
+    "price": "N.A.",
+    "category": "Speciality Museums"
+  },
+  "Royal Palace Amsterdam": {
+    "title": "Royal Palace Amsterdam",
+    "time": "1-2 hours",
+    "price": "N.A.",
+    "category": "Points of Interest & Landmarks • Architectural Buildings"
+  },
+  "Heineken Experience": {
+    "title": "Heineken Experience",
+    "time": "N.A.",
+    "price": "N.A.",
+    "category": "Breweries"
+  },
+  "GVB": {
+    "title": "GVB",
+    "time": "< 1 hour",
+    "price": "N.A.",
+    "category": "Public Transportation Systems"
+  },
+  "Het Scheepvaartmuseum| The National Maritime Museum": {
+    "title": "Het Scheepvaartmuseum| The National Maritime Museum",
+    "time": "1-2 hours",
+    "price": "N.A.",
+    "category": "History Museums"
+  },
+  "NEMO Science Museum": {
+    "title": "NEMO Science Museum",
+    "time": "2-3 hours",
+    "price": "from $24.77",
+    "category": "Science Museums • Children's Museums"
+  },
+  "OBA Library of Amsterdam": {
+    "title": "OBA Library of Amsterdam",
+    "time": "N.A.",
+    "price": "N.A.",
+    "category": "Libraries"
+  },
+  "Micropia": {
+    "title": "Micropia",
+    "time": "2-3 hours",
+    "price": "N.A.",
+    "category": "Speciality Museums"
+  },
+  "Dam Square": {
+    "title": "Dam Square",
+    "time": "N.A.",
+    "price": "N.A.",
+    "category": "Points of Interest & Landmarks"
+  },
+  "Hermitage Amsterdam": {
+    "title": "Hermitage Amsterdam",
+    "time": "1-2 hours",
+    "price": "N.A.",
+    "category": "Art Museums"
+  },
+  "Begijnhof": {
+    "title": "Begijnhof",
+    "time": "< 1 hour",
+    "price": "N.A.",
+    "category": "Historic Sites • Historic Walking Areas"
+  },
+  "Verzetsmuseum Amsterdam": {
+    "title": "Verzetsmuseum Amsterdam",
+    "time": "1-2 hours",
+    "price": "N.A.",
+    "category": "Children's Museums • History Museums"
+  },
+  "Johan Cruyff Arena": {
+    "title": "Johan Cruyff Arena",
+    "time": "1-2 hours",
+    "price": "N.A.",
+    "category": "Arenas & Stadiums"
+  },
+  "Stedelijk Museum Amsterdam": {
+    "title": "Stedelijk Museum Amsterdam",
+    "time": "2-3 hours",
+    "price": "from $21.08",
+    "category": "Art Museums"
+  },
+  "Amsterdam Canal Ring": {
+    "title": "Amsterdam Canal Ring",
+    "time": "More than 3 hours",
+    "price": "N.A.",
+    "category": "Neighborhoods • Bridges • Scenic Walking Areas"
+  },
+  "De Hallen Amsterdam": {
+    "title": "De Hallen Amsterdam",
+    "time": "2-3 hours",
+    "price": "N.A.",
+    "category": "Neighborhoods"
+  },
+  "Portuguese Synagogue": {
+    "title": "Portuguese Synagogue",
+    "time": "N.A.",
+    "price": "from $17.92",
+    "category": "Historic Sites • Architectural Buildings • Religious Sites"
+  },
+  "Albert Cuyp Market": {
+    "title": "Albert Cuyp Market",
+    "time": "2-3 hours",
+    "price": "N.A.",
+    "category": "Flea & Street Markets"
+  },
+  "Ripley's Believe It or Not! Amsterdam": {
+    "title": "Ripley's Believe It or Not! Amsterdam",
+    "time": "1-2 hours",
+    "price": "from $22.66",
+    "category": "Speciality Museums"
+  },
+  "Van Gogh Museum Admission": {
+    "title": "Van Gogh Museum Admission",
+    "description": "A chance to learn about the works and inspirations of Vincent Van Gogh",
+    "price": "US$22.73",
+    "rating": "96% liked it",
+    "bonus": "N.A."
+  },
+  "Amsterdam Evening Cruise": {
+    "title": "Amsterdam Evening Cruise",
+    "description": "A canal cruise on an electric boat with a bar on board",
+    "price": "US$20.76",
+    "rating": "84% liked it",
+    "bonus": "Drinks included."
+  },
+  "Rijksmuseum Admission": {
+    "title": "Rijksmuseum Admission",
+    "description": "A visit to see Rembrandt’s 'The Night Watch' and other famous Dutch paintings",
+    "price": "US$20.66",
+    "rating": "97% liked it",
+    "bonus": "N.A."
+  },
+  "Amsterdam City Canal Cruise": {
+    "title": "Amsterdam City Canal Cruise",
+    "description": "A 75-minute cruise on UNESCO World Heritage Listed canals",
+    "price": "US$15.50",
+    "rating": "N.A.",
+    "bonus": "Starting point: Stadhouderskade 501."
+  },
+  "Heineken Experience Amsterdam": {
+    "title": "Heineken Experience Amsterdam",
+    "description": "A visit to discover the secrets of the world-famous Heineken brewery",
+    "price": "US$21.86",
+    "rating": "90% liked it",
+    "bonus": "Duration: 1 hour 30 minutes"
+  },
+  "Canal Cruise with Drinks and Cheese": {
+    "title": "Canal Cruise with Drinks and Cheese",
+    "description": "A sightseeing voyage down Amsterdam's famous canals in a classic river boat",
+    "price": "US$30.80",
+    "rating": "N.A.",
+    "bonus": "N.A."
+  },
+  "Madame Tussauds Amsterdam Admission Ticket": {
+    "title": "Madame Tussauds Amsterdam Admission Ticket",
+    "description": "Chance to see wax statues of David Beckham, Madonna, Robert Pattinson, Brad Pitt and more",
+    "price": "US$25.71",
+    "rating": "95% liked it",
+    "bonus": "N.A."
+  },
+  "Admission Ticket to Upside Down Amsterdam": {
+    "title": "Admission Ticket to Upside Down Amsterdam",
+    "description": "A ticket to experience Upside Down Amsterdam",
+    "price": "US$25.66",
+    "rating": "92% liked it",
+    "bonus": "N.A."
+  },
+  "Amsterdam Canals Boat Trip": {
+    "title": "Amsterdam Canals Boat Trip",
+    "description": "A tour of Amsterdam's canals with payable drinks and snacks on-board",
+    "price": "US$19.63",
+    "rating": "95% liked it",
+    "bonus": "N.A."
+  },
+  "Moco Museum and Banksy Exhibition Admission": {
+    "title": "Moco Museum and Banksy Exhibition Admission",
+    "description": "A museum visit featuring a range of modern and contemporary art by famed artists",
+    "price": "US$20.52",
+    "rating": "90% liked it",
+    "bonus": "N.A."
+  },
+  "Light Festival Covered Boat Tour": {
+    "title": "Light Festival Covered Boat Tour",
+    "description": "A 90-minute Light Festival canal cruise with hot chocolate included",
+    "price": "US$28.28",
+    "rating": "N.A.",
+    "bonus": "N.A."
+  },
+  "Red Light Secrets Museum Visit in Amsterdam": {
+    "title": "Red Light Secrets Museum Visit in Amsterdam",
+    "description": "A visit to the world's first and only museum dedicated to prostitution",
+    "price": "US$14.98",
+    "rating": "92% liked it",
+    "bonus": "N.A."
+  },
+  "Artis Amsterdam Royal Zoo Admission": {
+    "title": "Artis Amsterdam Royal Zoo Admission",
+    "description": "Skip-the-line admission to one of the oldest zoos in Europe",
+    "price": "US$26.02",
+    "rating": "N.A.",
+    "bonus": "N.A."
+  },
+  "Full-day Dutch Countryside Tour with Canal Cruise": {
+    "title": "Full-day Dutch Countryside Tour with Canal Cruise",
+    "description": "A guided trip to Zaanse Schans, Edam, Volendam and Marken from Amsterdam",
+    "price": "US$36.16",
+    "rating": "N.A.",
+    "bonus": "Countryside tour. One-hour canal cruise. Guide services in Spanish."
+  },
+  "Anne Frank Walking Tour": {
+    "title": "Anne Frank Walking Tour",
+    "description": "A look at the Netherlands during the Nazi occupation and the significance of Anne Frank",
+    "price": "US$29.66",
+    "rating": "79% liked it",
+    "bonus": "Duration: 2 hours"
+  },
+  "NEMO Science Museum Ticket": {
+    "title": "NEMO Science Museum Ticket",
+    "description": "A museum that introduces children to scientific concepts in a fun and interactive way",
+    "price": "US$18.21",
+    "rating": "94% liked it",
+    "bonus": "N.A."
+  },
+  "Guided Evening Canal Cruise with Bar Onboard": {
+    "title": "Guided Evening Canal Cruise with Bar Onboard",
+    "description": "A chance to explore the canals of the city on an electric boat",
+    "price": "US$20.61",
+    "rating": "N.A.",
+    "bonus": "N.A."
+  },
+  "Admission to Ripley's Believe It or Not!": {
+    "title": "Admission to Ripley's Believe It or Not!",
+    "description": "A skip-the-line ticket to explore the Ripley's Museum in Amsterdam",
+    "price": "N.A.",
+    "rating": "93% liked it",
+    "bonus": "N.A."
+  },
+  "Amsterdam Canal Cruise": {
+    "title": "Amsterdam Canal Cruise",
+    "description": "A chance to explore the city's highlights on board a luxury canal boat",
+    "price": "US$20.76",
+    "rating": "N.A.",
+    "bonus": "N.A."
+  },
+  "Luxury Electric Canal Cruise": {
+    "title": "Luxury Electric Canal Cruise",
+    "description": "A one-hour cruise from Rijksmuseum to the oldest part of the city",
+    "price": "US$18.97",
+    "rating": "90% liked it",
+    "bonus": "Duration: 60 minutes"
+  },
+  "Klimmuur Centraal": { "title": "Klimmuur Centraal" },
+  "Scooter Rent Amsterdam": { "title": "Scooter Rent Amsterdam" },
+  "Amsterdam Dance Centre": { "title": "Amsterdam Dance Centre" },
+  "Lovers Powerzone": { "title": "Lovers Powerzone" },
+  "Bikram Yoga Amsterdam": { "title": "Bikram Yoga Amsterdam" },
+  "De Bosbaan": { "title": "De Bosbaan" },
+  "Borchland, the place to B.": { "title": "Borchland, the place to B." },
+  "MokumBoot": { "title": "MokumBoot" },
+  "Aikidojo": { "title": "Aikidojo" },
+  "Vitae Sport": { "title": "Vitae Sport" },
+  "The Upside Down Tickets": {
+    "title": "The Upside Down Tickets",
+    "description_long": "The Upside Down is the biggest Instagram museum in Europe – but it's more than just a museum. It's part amusement park, part club, part magic mushroom trip! Get your friends together and remember to charge your phones; you'll need battery power for all the photos you'll take in this mind-melting world of fun. Explore the boundaries of your own creativity, trick your brain and tickle your senses.",
+    "price": "€24.95",
+    "rating": "4.5"
+  },
+  "Het Amsterdamse Winterparadijs Tickets": {
+    "title": "Het Amsterdamse Winterparadijs Tickets",
+    "description_long": "Het Amsterdamse Winterparadijs is an annual winter event featuring seasonal attractions, activities, and live performances.",
+    "price": "€24.50",
+    "rating": "4.3"
+  },
+  "NEMO Science Museum Tickets": {
+    "title": "NEMO Science Museum Tickets",
+    "description_long": "NEMO Science Museum is a science centre in Amsterdam, located at the Oosterdok. It was built on top of the IJ-tunnel that connects the centre of Amsterdam with the north of the city. The striking building, designed by Italian architect and engineer, Renzo Piano, opened its doors in 1997. Some say the shape of the building mimics the appearance of a large boat, but others suggest that it's actually a reflection of the tunnel it was built upon.",
+    "price": "€17.50",
+    "rating": "4.6"
+  },
+  "Heineken Experience Tickets": {
+    "title": "Heineken Experience Tickets",
+    "description_long": "The Heineken Experience is located in the original Heineken Brewery. Gerard Adriaan Heineken bought this building back in 1863 when it was the De Hooiberg brewery. He then turned it towards the production of his eponymous beer. The building remained a brewery all the way up to 1988. It was then that it became a museum (and hotspot for Heineken consumption).",
+    "price": "€21.00",
+    "rating": "4.6"
+  },
+  "ARTIS Amsterdam Royal Zoo Tickets": {
+    "title": "ARTIS Amsterdam Royal Zoo Tickets",
+    "description_long": "The main purpose of ARTIS, the oldest zoo in the Netherlands, is to stimulate the care and love for nature. There are 27 historical buildings in the 140,000 m2 of the park. It's tucked away in a leafy green part of the city (the 'Plantage' District), and is a lovely place for nature lovers.",
+    "price": "€25.00",
+    "rating": "4.7"
+  },
+  "Our House Amsterdam Tickets": {
+    "title": "Our House Amsterdam Tickets",
+    "description_long": "Our House is the world’s first modern museum of electronic music culture!",
+    "price": "€19.95",
+    "rating": "4.6"
+  },
+  "XtraCold Icebar Tickets": {
+    "title": "XtraCold Icebar Tickets",
+    "description_long": "Welcome to the coolest bar in Amsterdam (literally). This teeth-chattering locale is the perfect spot to sample the lifestyle of a Polar explorer, without the risk of frostbite. Just meters from the busy Rembrandt Square, this is a great stop on a night on the town in Amsterdam. Free drinks and thermals should keep you warm. The bar is sculpted from 60 tons of natural ice and even your glass here is made from frozen H2O!",
+    "price": "€26.50",
+    "rating": "4.5"
+  },
+  "Madame Tussauds Amsterdam Tickets": {
+    "title": "Madame Tussauds Amsterdam Tickets",
+    "description_long": "Madame Tussauds is located in the center of Amsterdam at the ever-busy Dam Square. Founded by wax sculptor Marie Tussaud in the 18th century, this iconic wax museum chain has locations in many cities across the globe, including London, Berlin, New York, Las Vegas, Hong Kong, and Shanghai, and of course, the Dutch capital. ",
+    "price": "€22.00",
+    "rating": "4.6"
+  },
+  "Amaze Amsterdam Tickets": {
+    "title": "Amaze Amsterdam Tickets",
+    "description_long": "AMAZE Amsterdam is an immersive experience created by the world's largest dance event organizer ID&T. Visitors experience a journey from head to heart, where they are taken through seven experience worlds filled with state-of-the-art audiovisual technology.",
+    "price": "€26.95",
+    "rating": "4.6"
+  },
+  "BODY WORLDS: The Happiness Project Tickets": {
+    "title": "BODY WORLDS: The Happiness Project Tickets",
+    "description_long": "The German anatomist Gunther von Hagens, who invented the plastination technique in the late 1970s at teh University of Heidelberg, developed this exhibition.",
+    "price": "€22.50",
+    "rating": "4.7"
+  },
+  "Stedelijk Museum Amsterdam Tickets": {
+    "title": "Stedelijk Museum Amsterdam Tickets",
+    "description_long": "The Stedelijk Museum in Amsterdam was founded in 1874 and officially opened its doors in 1895. The building was designed by the architect Adriaan Willem Weissman and is located at the Museum Square, where you can also find The Rijksmuseum and The Van Gogh Museum.",
+    "price": "€20.00",
+    "rating": "4.7"
+  },
+  "STRAAT Museum Tickets": {
+    "title": "STRAAT Museum Tickets",
+    "description_long": "Just a quick ferry ride to NDSM from Amsterdam Central Station, you'll find this warehouse museum that pays tribute to a unique medium: street art. With roughly 150 artworks by 140 artists from 32 nationalities, this is your chance to see some of the best street art from around the world without ever leaving Amsterdam.",
+    "price": "€17.50",
+    "rating": "4.9"
+  },
+  "Amsterdam Nightlife Ticket": {
+    "title": "Amsterdam Nightlife Ticket",
+    "description_short": "Experience Amazing Nights in Amsterdam, with an  Amsterdam Nightlife Ticket!",
+    "price": "Vanaf € 12,73",
+    "author": "Amsterdam Nightlife"
+  },
+  "EUROPEAN WOMEN PAYMENTS NETWORK- ANNUAL CONFERENCE AMS 2022": {
+    "title": "EUROPEAN WOMEN PAYMENTS NETWORK- ANNUAL CONFERENCE AMS 2022",
+    "description_short": "The Event\nEWPN Annual Awards & Conference 2022 at KIT Royal Tropical Institute, Amsterdam",
+    "price": "From €57.49",
+    "author": "EWPN "
+  },
+  "Amsterdam SurpriseNight Experience": {
+    "title": "Amsterdam SurpriseNight Experience",
+    "description_short": "When was the last time that you really were surprised?",
+    "price": "Vanaf € 19,54",
+    "author": "Amsterdam Nightlife"
+  },
+  "LEAP Lifeforce Energy Awakening Process - AMSTERDAM with Robin Erkel": {
+    "title": "LEAP Lifeforce Energy Awakening Process - AMSTERDAM with Robin Erkel",
+    "description_short": "Kundalini Activation - Energy Transmission  - Back into the Joy of being Alive",
+    "price": "Sales Ended",
+    "author": "Robin Erkel"
+  },
+  "Changes4": {
+    "title": "Changes4",
+    "description_short": "Changes4",
+    "price": "Verkoop beëindigd",
+    "author": "Young Amsterdam"
+  },
+  "Ghosts of Amsterdam: 'Haunting Stories' Outdoor Escape Game": {
+    "title": "Ghosts of Amsterdam: 'Haunting Stories' Outdoor Escape Game",
+    "description_short": "Looking to get spooked or spook someone else? Then put on your vampire teeth and get booking: this is your opportunity to do exactly that!",
+    "price": "€6.99",
+    "author": "Questo - City Exploration Games"
+  },
+  "Improv Comedy Jam": {
+    "title": "Improv Comedy Jam",
+    "description_short": "Every two weeks, STHH plays their improv comedy jams at The 5th in Amsterdam! You can grab a drink and enjoy the show. Free and in English!",
+    "price": "Gratis",
+    "author": "Stranger Things Have Happened"
+  },
+  "Hollandse Luchten Zaanstad: samen meetplan bepalen": {
+    "title": "Hollandse Luchten Zaanstad: samen meetplan bepalen",
+    "description_short": "Kom samen het meetplan maken voor Hollandse Luchten in Zaanstad op maandag 28 november.",
+    "price": "Verkoop beëindigd",
+    "author": "Waag"
+  },
+  "Arena Nossa Roda - Brazil x Servia": {
+    "title": "Arena Nossa Roda - Brazil x Servia",
+    "description_short": "Arena Nossa Roda is a place to watch the brazilian games, have some fun with roda de samba before, at halftime and after the game.",
+    "price": "€10",
+    "author": "Nossa Roda Amsterdam"
+  },
+  "REGUSNEDERLAND.NL- Starting a Business in IT SAP Vacatures Breda Maastricht": {
+    "title": "REGUSNEDERLAND.NL- Starting a Business in IT SAP Vacatures Breda Maastricht",
+    "description_short": "DAEB -Techrabota.bg ltd Strong Business Plan for Any Industry Today. Save Time and Cut the Stress. Create a Strong Business Plan in 1/2",
+    "price": "€ 49",
+    "author": "Mr. Data Business School - Amsterdam Centre"
+  },
+  "XADAT.NL University. WEESPERSTRAAT 61,63,67,103,105 Techrabota.bg ltd DAEB": {
+    "title": "XADAT.NL University. WEESPERSTRAAT 61,63,67,103,105 Techrabota.bg ltd DAEB",
+    "description_short": "XADAT.NL University. WEESPERSTRAAT 61,63,67,103,105 Techrabota.bg ltd DAEB Bootcamp With Job Placement Guarantee in Amsterdam (SAP BI Resume",
+    "price": "€ 25.162,80",
+    "author": "Mr. Data Business School - Amsterdam Centre"
+  },
+  "SAP Cursus logistiek LOI Nieuwe Keizersgracht 88, SAP software training": {
+    "title": "SAP Cursus logistiek LOI Nieuwe Keizersgracht 88, SAP software training",
+    "description_short": "Nieuwe Keizersgracht 88,100 SAP software training regus TECHRABOTA.BG LTD course cost fees Mr Data SAP cursus logistiek, sap cursus gratis",
+    "price": "Vanaf € 419,51",
+    "author": "Mr. Data Business School"
+  },
+  "REGUSNEDERLAND.NL- free virtual office addresses uk or BG?": {
+    "title": "REGUSNEDERLAND.NL- free virtual office addresses uk or BG?",
+    "description_short": "info@mr-data.nl, virual office addresses uk - your virtual office london, office cost, Office Space For Rent London of Bulgeria?",
+    "price": "€ 49",
+    "author": "Mr. Data Business School - Amsterdam Centre"
+  },
+  "Startup Amsterdam. How To Start Up Your Own Business Company + Google seo": {
+    "title": "Startup Amsterdam. How To Start Up Your Own Business Company + Google seo",
+    "description_short": "Weesperstraat 101,103  Metropoolgebouwhuisregt\nHow to start up a business, expat center amsterdam, international business school,\nMoving",
+    "price": "€ 363,95",
+    "author": "Mr Data Amsterdam | SEO Service | Google Experts"
+  },
+  "Kan ik SAP leren? MR DATA BUSINESS SCHOOL REGUSNEDERLAND.NL Virual Offices": {
+    "title": "Kan ik SAP leren? MR DATA BUSINESS SCHOOL REGUSNEDERLAND.NL Virual Offices",
+    "description_short": "MondyHolten (Haiti) klantgerichtheid en big data gedreven, met 8+ jaar ervaring als Business Analyst & BI",
+    "price": "€ 1.573,80",
+    "author": "XADAT.NL ICT Opleiding & Mr Data Business School"
+  },
+  "Techrabota.bg ltd SAP software training Weesperstraat 105 course cost fees": {
+    "title": "Techrabota.bg ltd SAP software training Weesperstraat 105 course cost fees",
+    "description_short": "Techrabota.bg ltd - Mr Data  Nieuwe Prinsengracht Metropoolgebouw SAP software training Weesperstraat 105 course cost fees Mr.Data",
+    "price": "Vanaf € 419,51",
+    "author": "Mr. Data Business School"
+  },
+  "TECHRABOTA.BG LTD  MR BIG Data // Basis SAP ERP  / Omscholen naar ict 2022": {
+    "title": "TECHRABOTA.BG LTD  MR BIG Data // Basis SAP ERP  / Omscholen naar ict 2022",
+    "description_short": "TECHRABOTA.BG LTD - METROPOOLGEBOUW.NL Big Data Business School en vergroot uw kansen op de arbeidsmarkt ! SAP Basis  Data Business School",
+    "price": "€ 425,80",
+    "author": "Mr Data Business School, Amsterdam Cursus, MBO en HBO Opleidingen (via tran..."
+  },
+  "Techrabota.bg ltd Mr Data Sap basis in 21 days -  Sap Basis Step By Step": {
+    "title": "Techrabota.bg ltd Mr Data Sap basis in 21 days -  Sap Basis Step By Step",
+    "description_short": "In 3 sessies geweldig inzicht in de essentie van SAP. Bel Mr Data Amsterdam +31616073107 info@mr-data.nl\nOpen Inschrijvingen Trainingen | K",
+    "price": "€ 2.132,93",
+    "author": "Mr. Data Business School - Amsterdam Centre"
+  },
+  "Techrabota.bg ltd Mr Data Business School of Technology Int CampusMetropool": {
+    "title": "Techrabota.bg ltd Mr Data Business School of Technology Int CampusMetropool",
+    "description_short": "Techrabota.BG Ltd h.o.d.n. Mr. Data Business School of Technology International Amsterdam Campus Metropool.Weesperstraat 63,65,67,101,103",
+    "price": "€ 25.162,80",
+    "author": "Mr. Data Business School - Amsterdam Centre"
+  },
+  "REGUSNEDERLAND.NL Starting Business  IT SAP Vacatures Rotterdam, Utrecht": {
+    "title": "REGUSNEDERLAND.NL Starting Business  IT SAP Vacatures Rotterdam, Utrecht",
+    "description_short": "DAEB -Techrabota.bg ltd Strong Business Plan for Any Industry Today. Save Time and Cut the Stress. Create a Strong Business Plan in 1/2",
+    "price": "€ 49",
+    "author": "Mr. Data Business School - Amsterdam Centre"
+  }
+}

@@ -1,3 +1,5 @@
+const fs = require("fs");
+
 const tripadvisorScraper = require("./scraper-websites/tripadvisor");
 const bookingScraper = require("./scraper-websites/booking");
 const yelpScraper = require("./scraper-websites/yelp");
@@ -19,9 +21,19 @@ async function data() {
     ...eventbriteData,
   };
 
-  console.log(eventsData)
+  const eventsContent = JSON.stringify(eventsData);
+  console.log(eventsContent);
 
-  return eventsData
+  fs.writeFile("events.json", eventsContent, "utf8", function (err) {
+    if (err) {
+      console.log("An error occured while writing JSON Object to File.");
+      return console.log(err);
+    }
+
+    console.log("JSON file has been saved.");
+  });
+
+  return eventsData;
 }
 
 data();

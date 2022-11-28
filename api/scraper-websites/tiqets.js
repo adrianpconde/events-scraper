@@ -4,7 +4,7 @@ async function tiqets() {
   const browser = await puppeteer.launch({
     executablePath:
       "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
-    headless: false,
+    headless: true,
     args: ["--incognito"],
   });
 
@@ -112,9 +112,9 @@ async function tiqets() {
     return acc;
   }, {});
 
-  return tiqetsData
-
   await context.close();
+
+  return tiqetsData;
 }
 
 module.exports = {
