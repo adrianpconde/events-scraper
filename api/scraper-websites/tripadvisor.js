@@ -105,7 +105,13 @@ async function tripadvisor() {
 
     thingsToDo.push(attraction);
   }
-  console.log(thingsToDo);
+
+  const tripadvisorData = thingsToDo.reduce((acc, item) => {
+    acc[item.title] = item;
+    return acc;
+  }, {});
+
+  return tripadvisorData;
 
   await context.close();
 }

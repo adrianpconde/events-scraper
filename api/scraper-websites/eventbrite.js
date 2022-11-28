@@ -91,7 +91,12 @@ async function eventbrite() {
     thingsToDo.push(attractionData);
   }
 
-  console.log(thingsToDo);
+  const eventbriteData = thingsToDo.reduce((acc, item) => {
+    acc[item.title] = item;
+    return acc;
+  }, {});
+  
+  return eventbriteData
 
   await context.close();
 }

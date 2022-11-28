@@ -28,7 +28,6 @@ async function yelp() {
 
   await delay(1000);
 
-
   // Going to Activities page on Yelp:
 
   await page.click(
@@ -67,7 +66,12 @@ async function yelp() {
     thingsToDo.push(attractionData);
   }
 
-  console.log(thingsToDo);
+  const yelpData = thingsToDo.reduce((acc, item) => {
+    acc[item.title] = item;
+    return acc;
+  }, {});
+
+  return yelpData;
 
   await context.close();
 }

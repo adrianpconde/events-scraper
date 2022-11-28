@@ -40,7 +40,9 @@ async function booking() {
 
   await page.type(".css-uigm6z", cityName);
 
-  await delay(1000);
+  await delay(2000);
+
+  await page.waitForSelector(".css-e4thx1");
 
   await page.click(".css-e4thx1");
 
@@ -50,8 +52,10 @@ async function booking() {
 
   // Taking URL of each event:
 
+  await page.waitForSelector(".css-0");
+
   const events = await page.evaluate(() => {
-    const attractions = document.querySelectorAll(".css-vzwf41");
+    const attractions = document.querySelectorAll("a[rel=noreferrer]");
 
     const links = [];
     for (let attraction of attractions) {
@@ -59,6 +63,8 @@ async function booking() {
     }
     return links;
   });
+
+  await delay(4000);
 
   // Array created and loop on every event to take the data:
 
@@ -75,24 +81,22 @@ async function booking() {
         ".e1f827110f, .css-1uk1gs8"
       ).textContent;
       try {
-        tmp.description_short =
-          document.querySelector(".a0c113411d").textContent;
+        tmp.description = document.querySelector(".a0c113411d").textContent;
       } catch (error) {
-        tmp.description_short = "N.A.";
-      }
-      try {
-        tmp.description_long = document.querySelector(
-          "#attr-product-page-main-content > div.css-1hp67ie > div.css-n9kgwt"
-        ).textContent;
-      } catch (error) {
-        tmp.description_long = "N.A.";
+        tmp.description = "N.A.";
       }
       try {
         tmp.price = document.querySelector(
           "div.css-2ygbp3 > div:nth-child(1) > div > div.ac78a73c96"
         ).textContent;
-      } catch (error) {
-        tmp.price = "N.A.";
+      } catch (ex0) {
+        try {
+          tmp.price = document.querySelector(
+            "div.css-6psj0n > div:nth-child(1) > div > div.b72a27c85f > span"
+          ).textContent;
+        } catch (ex1) {
+          tmp.price = "N.A.";
+        }
       }
       try {
         tmp.rating = document.querySelector(
@@ -115,7 +119,12 @@ async function booking() {
     thingsToDo.push(attractionData);
   }
 
-  console.log(thingsToDo);
+  const bookingData = thingsToDo.reduce((acc, item) => {
+    acc[item.title] = item;
+    return acc;
+  }, {});
+
+  return bookingData
 
   await context.close();
 }
