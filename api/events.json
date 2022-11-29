@@ -1,524 +1,636 @@
 {
-  "Rijksmuseum": {
-    "title": "Rijksmuseum",
-    "time": "2-3 hours",
-    "price": "from $33.73",
-    "category": "Art Museums"
-  },
   "Anne Frank House": {
     "title": "Anne Frank House",
     "time": "1-2 hours",
     "price": "N.A.",
-    "category": "Speciality Museums"
+    "category": "Speciality Museums",
+    "url": "https://www.tripadvisor.com/Attraction_Review-g188590-d190555-Reviews-Anne_Frank_House-Amsterdam_North_Holland_Province.html"
   },
   "Van Gogh Museum": {
     "title": "Van Gogh Museum",
     "time": "1-2 hours",
     "price": "from $28.46",
-    "category": "Art Museums"
+    "category": "Art Museums",
+    "url": "https://www.tripadvisor.com/Attraction_Review-g188590-d190554-Reviews-Van_Gogh_Museum-Amsterdam_North_Holland_Province.html"
   },
-  "The Jordaan": {
-    "title": "The Jordaan",
+  "Rijksmuseum": {
+    "title": "Rijksmuseum",
     "time": "2-3 hours",
-    "price": "N.A.",
-    "category": "Neighborhoods"
-  },
-  "A'dam Lookout": {
-    "title": "A'dam Lookout",
-    "time": "1-2 hours",
-    "price": "N.A.",
-    "category": "Observation Decks & Towers"
-  },
-  "Body Worlds": {
-    "title": "Body Worlds",
-    "time": "1-2 hours",
-    "price": "from $23.71",
-    "category": "Speciality Museums • Science Museums"
+    "price": "from $33.73",
+    "category": "Art Museums",
+    "url": "https://www.tripadvisor.com/Attraction_Review-g188590-d189379-Reviews-Rijksmuseum-Amsterdam_North_Holland_Province.html"
   },
   "Vondelpark": {
     "title": "Vondelpark",
     "time": "2-3 hours",
     "price": "N.A.",
-    "category": "Parks"
+    "category": "Parks",
+    "url": "https://www.tripadvisor.com/Attraction_Review-g188590-d189384-Reviews-Vondelpark-Amsterdam_North_Holland_Province.html"
   },
-  "Moco Museum Amsterdam": {
-    "title": "Moco Museum Amsterdam",
-    "time": "1-2 hours",
-    "price": "N.A.",
-    "category": "Art Museums"
-  },
-  "Museum Het Rembrandthuis": {
-    "title": "Museum Het Rembrandthuis",
-    "time": "N.A.",
-    "price": "N.A.",
-    "category": "Historic Sites • Art Museums"
-  },
-  "ARTIS Amsterdam Royal Zoo": {
-    "title": "ARTIS Amsterdam Royal Zoo",
+  "The Jordaan": {
+    "title": "The Jordaan",
     "time": "2-3 hours",
-    "price": "from $39.87",
-    "category": "Zoos"
+    "price": "N.A.",
+    "category": "Neighborhoods",
+    "url": "https://www.tripadvisor.com/Attraction_Review-g188590-d190575-Reviews-The_Jordaan-Amsterdam_North_Holland_Province.html"
   },
   "Centraal Station": {
     "title": "Centraal Station",
     "time": "N.A.",
     "price": "N.A.",
-    "category": "Points of Interest & Landmarks • Architectural Buildings • Public Transportation Systems"
-  },
-  "Museum Ons'Lieve Heer Op Solder": {
-    "title": "Museum Ons'Lieve Heer Op Solder",
-    "time": "1-2 hours",
-    "price": "N.A.",
-    "category": "Speciality Museums"
-  },
-  "Royal Palace Amsterdam": {
-    "title": "Royal Palace Amsterdam",
-    "time": "1-2 hours",
-    "price": "N.A.",
-    "category": "Points of Interest & Landmarks • Architectural Buildings"
+    "category": "Points of Interest & Landmarks • Architectural Buildings • Public Transportation Systems",
+    "url": "https://www.tripadvisor.com/Attraction_Review-g188590-d190573-Reviews-Centraal_Station-Amsterdam_North_Holland_Province.html"
   },
   "Heineken Experience": {
     "title": "Heineken Experience",
     "time": "N.A.",
     "price": "N.A.",
-    "category": "Breweries"
+    "category": "Breweries",
+    "url": "https://www.tripadvisor.com/Attraction_Review-g188590-d240813-Reviews-Heineken_Experience-Amsterdam_North_Holland_Province.html"
   },
-  "GVB": {
-    "title": "GVB",
-    "time": "< 1 hour",
+  "Red Light District": {
+    "title": "Red Light District",
+    "time": "2-3 hours",
     "price": "N.A.",
-    "category": "Public Transportation Systems"
+    "category": "Neighborhoods",
+    "url": "https://www.tripadvisor.com/Attraction_Review-g188590-d190584-Reviews-Red_Light_District-Amsterdam_North_Holland_Province.html"
   },
-  "Het Scheepvaartmuseum| The National Maritime Museum": {
-    "title": "Het Scheepvaartmuseum| The National Maritime Museum",
+  "Body Worlds": {
+    "title": "Body Worlds",
+    "time": "1-2 hours",
+    "price": "from $23.71",
+    "category": "Speciality Museums • Science Museums",
+    "url": "https://www.tripadvisor.com/Attraction_Review-g188590-d6024007-Reviews-Body_Worlds-Amsterdam_North_Holland_Province.html"
+  },
+  "Museum Ons'Lieve Heer Op Solder": {
+    "title": "Museum Ons'Lieve Heer Op Solder",
     "time": "1-2 hours",
     "price": "N.A.",
-    "category": "History Museums"
+    "category": "Speciality Museums",
+    "url": "https://www.tripadvisor.com/Attraction_Review-g188590-d190585-Reviews-Museum_Ons_Lieve_Heer_Op_Solder-Amsterdam_North_Holland_Province.html"
   },
-  "NEMO Science Museum": {
-    "title": "NEMO Science Museum",
-    "time": "2-3 hours",
-    "price": "from $24.77",
-    "category": "Science Museums • Children's Museums"
-  },
-  "OBA Library of Amsterdam": {
-    "title": "OBA Library of Amsterdam",
+  "Museum Het Rembrandthuis": {
+    "title": "Museum Het Rembrandthuis",
     "time": "N.A.",
     "price": "N.A.",
-    "category": "Libraries"
-  },
-  "Micropia": {
-    "title": "Micropia",
-    "time": "2-3 hours",
-    "price": "N.A.",
-    "category": "Speciality Museums"
+    "category": "Historic Sites • Art Museums",
+    "url": "https://www.tripadvisor.com/Attraction_Review-g188590-d198999-Reviews-Museum_Het_Rembrandthuis-Amsterdam_North_Holland_Province.html"
   },
   "Dam Square": {
     "title": "Dam Square",
     "time": "N.A.",
     "price": "N.A.",
-    "category": "Points of Interest & Landmarks"
+    "category": "Points of Interest & Landmarks",
+    "url": "https://www.tripadvisor.com/Attraction_Review-g188590-d189381-Reviews-Dam_Square-Amsterdam_North_Holland_Province.html"
   },
-  "Hermitage Amsterdam": {
-    "title": "Hermitage Amsterdam",
+  "ARTIS Amsterdam Royal Zoo": {
+    "title": "ARTIS Amsterdam Royal Zoo",
+    "time": "2-3 hours",
+    "price": "from $39.87",
+    "category": "Zoos",
+    "url": "https://www.tripadvisor.com/Attraction_Review-g188590-d244497-Reviews-ARTIS_Amsterdam_Royal_Zoo-Amsterdam_North_Holland_Province.html"
+  },
+  "A'dam Lookout": {
+    "title": "A'dam Lookout",
     "time": "1-2 hours",
     "price": "N.A.",
-    "category": "Art Museums"
+    "category": "Observation Decks & Towers",
+    "url": "https://www.tripadvisor.com/Attraction_Review-g188590-d10106528-Reviews-A_dam_Lookout-Amsterdam_North_Holland_Province.html"
+  },
+  "Museum Quarter": {
+    "title": "Museum Quarter",
+    "time": "N.A.",
+    "price": "N.A.",
+    "category": "Points of Interest & Landmarks",
+    "url": "https://www.tripadvisor.com/Attraction_Review-g188590-d1174891-Reviews-Museum_Quarter-Amsterdam_North_Holland_Province.html"
+  },
+  "Royal Palace Amsterdam": {
+    "title": "Royal Palace Amsterdam",
+    "time": "1-2 hours",
+    "price": "N.A.",
+    "category": "Points of Interest & Landmarks • Architectural Buildings",
+    "url": "https://www.tripadvisor.com/Attraction_Review-g188590-d244447-Reviews-Royal_Palace_Amsterdam-Amsterdam_North_Holland_Province.html"
+  },
+  "Moco Museum Amsterdam": {
+    "title": "Moco Museum Amsterdam",
+    "time": "1-2 hours",
+    "price": "N.A.",
+    "category": "Art Museums",
+    "url": "https://www.tripadvisor.com/Attraction_Review-g188590-d10355655-Reviews-Moco_Museum_Amsterdam-Amsterdam_North_Holland_Province.html"
   },
   "Begijnhof": {
     "title": "Begijnhof",
     "time": "< 1 hour",
     "price": "N.A.",
-    "category": "Historic Sites • Historic Walking Areas"
+    "category": "Historic Sites • Historic Walking Areas",
+    "url": "https://www.tripadvisor.com/Attraction_Review-g188590-d244498-Reviews-Begijnhof-Amsterdam_North_Holland_Province.html"
+  },
+  "GVB": {
+    "title": "GVB",
+    "time": "< 1 hour",
+    "price": "N.A.",
+    "category": "Public Transportation Systems",
+    "url": "https://www.tripadvisor.com/Attraction_Review-g188590-d8618315-Reviews-GVB-Amsterdam_North_Holland_Province.html"
   },
   "Verzetsmuseum Amsterdam": {
     "title": "Verzetsmuseum Amsterdam",
     "time": "1-2 hours",
     "price": "N.A.",
-    "category": "Children's Museums • History Museums"
+    "category": "Children's Museums • History Museums",
+    "url": "https://www.tripadvisor.com/Attraction_Review-g188590-d266245-Reviews-Verzetsmuseum_Amsterdam-Amsterdam_North_Holland_Province.html"
   },
-  "Johan Cruyff Arena": {
-    "title": "Johan Cruyff Arena",
+  "Het Scheepvaartmuseum| The National Maritime Museum": {
+    "title": "Het Scheepvaartmuseum| The National Maritime Museum",
     "time": "1-2 hours",
     "price": "N.A.",
-    "category": "Arenas & Stadiums"
+    "category": "History Museums",
+    "url": "https://www.tripadvisor.com/Attraction_Review-g188590-d194316-Reviews-Het_Scheepvaartmuseum_The_National_Maritime_Museum-Amsterdam_North_Holland_Provinc.html"
   },
-  "Stedelijk Museum Amsterdam": {
-    "title": "Stedelijk Museum Amsterdam",
+  "NEMO Science Museum": {
+    "title": "NEMO Science Museum",
     "time": "2-3 hours",
-    "price": "from $21.08",
-    "category": "Art Museums"
+    "price": "from $24.77",
+    "category": "Science Museums • Children's Museums",
+    "url": "https://www.tripadvisor.com/Attraction_Review-g188590-d194315-Reviews-NEMO_Science_Museum-Amsterdam_North_Holland_Province.html"
+  },
+  "Madame Tussauds Amsterdam": {
+    "title": "Madame Tussauds Amsterdam",
+    "time": "N.A.",
+    "price": "from $23.19",
+    "category": "Speciality Museums",
+    "url": "https://www.tripadvisor.com/Attraction_Review-g188590-d244448-Reviews-Madame_Tussauds_Amsterdam-Amsterdam_North_Holland_Province.html"
+  },
+  "Herengracht": {
+    "title": "Herengracht",
+    "time": "N.A.",
+    "price": "N.A.",
+    "category": "Bodies of Water",
+    "url": "https://www.tripadvisor.com/Attraction_Review-g188590-d266270-Reviews-Herengracht-Amsterdam_North_Holland_Province.html"
+  },
+  "OBA Library of Amsterdam": {
+    "title": "OBA Library of Amsterdam",
+    "time": "N.A.",
+    "price": "N.A.",
+    "category": "Libraries",
+    "url": "https://www.tripadvisor.com/Attraction_Review-g188590-d1499038-Reviews-OBA_Library_of_Amsterdam-Amsterdam_North_Holland_Province.html"
+  },
+  "Micropia": {
+    "title": "Micropia",
+    "time": "2-3 hours",
+    "price": "N.A.",
+    "category": "Speciality Museums",
+    "url": "https://www.tripadvisor.com/Attraction_Review-g188590-d7205127-Reviews-Micropia-Amsterdam_North_Holland_Province.html"
   },
   "Amsterdam Canal Ring": {
     "title": "Amsterdam Canal Ring",
     "time": "More than 3 hours",
     "price": "N.A.",
-    "category": "Neighborhoods • Bridges • Scenic Walking Areas"
+    "category": "Neighborhoods • Bridges • Scenic Walking Areas",
+    "url": "https://www.tripadvisor.com/Attraction_Review-g188590-d8609333-Reviews-Amsterdam_Canal_Ring-Amsterdam_North_Holland_Province.html"
   },
-  "De Hallen Amsterdam": {
-    "title": "De Hallen Amsterdam",
-    "time": "2-3 hours",
+  "Johan Cruyff Arena": {
+    "title": "Johan Cruyff Arena",
+    "time": "1-2 hours",
     "price": "N.A.",
-    "category": "Neighborhoods"
+    "category": "Arenas & Stadiums",
+    "url": "https://www.tripadvisor.com/Attraction_Review-g188590-d245166-Reviews-Johan_Cruyff_Arena-Amsterdam_North_Holland_Province.html"
   },
   "Portuguese Synagogue": {
     "title": "Portuguese Synagogue",
     "time": "N.A.",
     "price": "from $17.92",
-    "category": "Historic Sites • Architectural Buildings • Religious Sites"
+    "category": "Historic Sites • Architectural Buildings • Religious Sites",
+    "url": "https://www.tripadvisor.com/Attraction_Review-g188590-d244481-Reviews-Portuguese_Synagogue-Amsterdam_North_Holland_Province.html"
   },
-  "Albert Cuyp Market": {
-    "title": "Albert Cuyp Market",
+  "De 9 Straatjes": {
+    "title": "De 9 Straatjes",
     "time": "2-3 hours",
     "price": "N.A.",
-    "category": "Flea & Street Markets"
-  },
-  "Ripley's Believe It or Not! Amsterdam": {
-    "title": "Ripley's Believe It or Not! Amsterdam",
-    "time": "1-2 hours",
-    "price": "from $22.66",
-    "category": "Speciality Museums"
+    "category": "Neighborhoods • Points of Interest & Landmarks",
+    "url": "https://www.tripadvisor.com/Attraction_Review-g188590-d196107-Reviews-De_9_Straatjes-Amsterdam_North_Holland_Province.html"
   },
   "Van Gogh Museum Admission": {
     "title": "Van Gogh Museum Admission",
     "description": "A chance to learn about the works and inspirations of Vincent Van Gogh",
-    "price": "US$22.73",
-    "rating": "96% liked it",
-    "bonus": "N.A."
+    "price": "US$22.81",
+    "rating": "95% liked it",
+    "bonus": "N.A.",
+    "url": "https://www.booking.com/attractions/nl/prz8b1w8aysi-van-gogh-museum-tour.html?date=2022-11-29&start_time=13%3A45"
   },
   "Amsterdam Evening Cruise": {
     "title": "Amsterdam Evening Cruise",
     "description": "A canal cruise on an electric boat with a bar on board",
-    "price": "US$20.76",
+    "price": "US$20.61",
     "rating": "84% liked it",
-    "bonus": "Drinks included."
+    "bonus": "Drinks included.",
+    "url": "https://www.booking.com/attractions/nl/prrnmdso7hmh-amsterdam-evening-cruise.html?date=2022-11-29&start_time=17%3A00&ticket_type=OFMTzA14oO1c"
   },
   "Rijksmuseum Admission": {
     "title": "Rijksmuseum Admission",
     "description": "A visit to see Rembrandt’s 'The Night Watch' and other famous Dutch paintings",
     "price": "US$20.66",
     "rating": "97% liked it",
-    "bonus": "N.A."
+    "bonus": "N.A.",
+    "url": "https://www.booking.com/attractions/nl/pr0dwcibnsiu-rijksmuseum-admission.html?date=2022-11-29&start_time=13%3A00&ticket_type=OFj6f5jM6Lt9"
   },
   "Amsterdam City Canal Cruise": {
     "title": "Amsterdam City Canal Cruise",
     "description": "A 75-minute cruise on UNESCO World Heritage Listed canals",
     "price": "US$15.50",
     "rating": "N.A.",
-    "bonus": "Starting point: Stadhouderskade 501."
+    "bonus": "Starting point: Stadhouderskade 501.",
+    "url": "https://www.booking.com/attractions/nl/prswfbbp2s5p-amsterdam-city-canal-cruise.html?date=2022-11-29&start_time=14%3A00&ticket_type=OFOI5qeco5b9"
   },
   "Heineken Experience Amsterdam": {
     "title": "Heineken Experience Amsterdam",
     "description": "A visit to discover the secrets of the world-famous Heineken brewery",
-    "price": "US$21.86",
+    "price": "US$21.70",
     "rating": "90% liked it",
-    "bonus": "Duration: 1 hour 30 minutes"
+    "bonus": "Duration: 1 hour 30 minutes",
+    "url": "https://www.booking.com/attractions/nl/prahazwttraa-heineken-experience-amsterdam.html?date=2022-11-29&start_time=13%3A30&ticket_type=OFx1qRZLFgCA"
   },
   "Canal Cruise with Drinks and Cheese": {
     "title": "Canal Cruise with Drinks and Cheese",
     "description": "A sightseeing voyage down Amsterdam's famous canals in a classic river boat",
-    "price": "US$30.80",
+    "price": "US$30.94",
     "rating": "N.A.",
-    "bonus": "N.A."
+    "bonus": "N.A.",
+    "url": "https://www.booking.com/attractions/nl/prqbvvzvdqdw-canal-cruise-with-drinks-and-cheese.html?date=2022-11-29&start_time=13%3A00&ticket_type=OFYQRDUA2EYO"
   },
   "Madame Tussauds Amsterdam Admission Ticket": {
     "title": "Madame Tussauds Amsterdam Admission Ticket",
     "description": "Chance to see wax statues of David Beckham, Madonna, Robert Pattinson, Brad Pitt and more",
-    "price": "US$25.71",
+    "price": "US$25.92",
     "rating": "95% liked it",
-    "bonus": "N.A."
+    "bonus": "N.A.",
+    "url": "https://www.booking.com/attractions/nl/prunuisbalws-madame-tussauds-amsterdam-entrance-ticket.html?date=2022-11-30&start_time=10%3A00&ticket_type=OFOIKk1lL4mf"
   },
   "Admission Ticket to Upside Down Amsterdam": {
     "title": "Admission Ticket to Upside Down Amsterdam",
     "description": "A ticket to experience Upside Down Amsterdam",
-    "price": "US$25.66",
+    "price": "US$25.78",
     "rating": "92% liked it",
-    "bonus": "N.A."
+    "bonus": "N.A.",
+    "url": "https://www.booking.com/attractions/nl/prqwzhym4dj5-admission-ticket-to-upside-down-amsterdam.html?date=2022-11-30&start_time=10%3A00&ticket_type=OFvMnjVvmRr3"
   },
   "Amsterdam Canals Boat Trip": {
     "title": "Amsterdam Canals Boat Trip",
     "description": "A tour of Amsterdam's canals with payable drinks and snacks on-board",
-    "price": "US$19.63",
+    "price": "US$19.70",
     "rating": "95% liked it",
-    "bonus": "N.A."
+    "bonus": "N.A.",
+    "url": "https://www.booking.com/attractions/nl/pr5pl2nofqxk-amsterdam-canals-boat-trip.html?date=2022-11-29&start_time=14%3A30&ticket_type=OFwwsw3R4lDj"
   },
   "Moco Museum and Banksy Exhibition Admission": {
     "title": "Moco Museum and Banksy Exhibition Admission",
     "description": "A museum visit featuring a range of modern and contemporary art by famed artists",
-    "price": "US$20.52",
+    "price": "US$20.68",
     "rating": "90% liked it",
-    "bonus": "N.A."
+    "bonus": "N.A.",
+    "url": "https://www.booking.com/attractions/nl/pr0ny38s6rp3-moco-museum-and-banksy-exhibition-tickets.html?date=2022-11-29&start_time=13%3A00&ticket_type=OFGdoUHepKfr"
   },
   "Light Festival Covered Boat Tour": {
     "title": "Light Festival Covered Boat Tour",
     "description": "A 90-minute Light Festival canal cruise with hot chocolate included",
-    "price": "US$28.28",
+    "price": "US$28.51",
     "rating": "N.A.",
-    "bonus": "N.A."
+    "bonus": "N.A.",
+    "url": "https://www.booking.com/attractions/nl/prbc3khafjrt-light-festival-covered-boat-tour.html?date=2022-12-01&start_time=17%3A00&ticket_type=OF0qAER3GAPG"
   },
   "Red Light Secrets Museum Visit in Amsterdam": {
     "title": "Red Light Secrets Museum Visit in Amsterdam",
     "description": "A visit to the world's first and only museum dedicated to prostitution",
-    "price": "US$14.98",
+    "price": "US$15.03",
     "rating": "92% liked it",
-    "bonus": "N.A."
+    "bonus": "N.A.",
+    "url": "https://www.booking.com/attractions/nl/prltgxiqtmof-red-light-secrets-museum-visit-in-amsterdam.html?date=2022-11-29&start_time=14%3A00&ticket_type=OFxmhmQe1OTZ"
   },
   "Artis Amsterdam Royal Zoo Admission": {
     "title": "Artis Amsterdam Royal Zoo Admission",
     "description": "Skip-the-line admission to one of the oldest zoos in Europe",
-    "price": "US$26.02",
+    "price": "US$25.83",
     "rating": "N.A.",
-    "bonus": "N.A."
+    "bonus": "N.A.",
+    "url": "https://www.booking.com/attractions/nl/prjfsm2ezbdv-artis-amsterdam-royal-zoo-skip-the-line-ticket.html?date=2022-11-29&start_time=13%3A15&ticket_type=OFfdweNts34U"
   },
   "Full-day Dutch Countryside Tour with Canal Cruise": {
     "title": "Full-day Dutch Countryside Tour with Canal Cruise",
     "description": "A guided trip to Zaanse Schans, Edam, Volendam and Marken from Amsterdam",
-    "price": "US$36.16",
+    "price": "US$36.28",
     "rating": "N.A.",
-    "bonus": "Countryside tour. One-hour canal cruise. Guide services in Spanish."
+    "bonus": "Countryside tour. One-hour canal cruise. Guide services in Spanish.",
+    "url": "https://www.booking.com/attractions/nl/prnqsdg3swdk-full-day-dutch-countryside-tour-with-canal-cruise.html?date=2022-11-30&start_time=08%3A15"
   },
   "Anne Frank Walking Tour": {
     "title": "Anne Frank Walking Tour",
     "description": "A look at the Netherlands during the Nazi occupation and the significance of Anne Frank",
-    "price": "US$29.66",
+    "price": "US$29.44",
     "rating": "79% liked it",
-    "bonus": "Duration: 2 hours"
-  },
-  "NEMO Science Museum Ticket": {
-    "title": "NEMO Science Museum Ticket",
-    "description": "A museum that introduces children to scientific concepts in a fun and interactive way",
-    "price": "US$18.21",
-    "rating": "94% liked it",
-    "bonus": "N.A."
+    "bonus": "Duration: 2 hours",
+    "url": "https://www.booking.com/attractions/nl/prklx6pgn0pz-anne-frank-walking-tour.html?date=2022-11-29&start_time=14%3A00&ticket_type=OFGHc1XFjprM"
   },
   "Guided Evening Canal Cruise with Bar Onboard": {
     "title": "Guided Evening Canal Cruise with Bar Onboard",
     "description": "A chance to explore the canals of the city on an electric boat",
-    "price": "US$20.61",
+    "price": "US$20.68",
     "rating": "N.A.",
-    "bonus": "N.A."
+    "bonus": "N.A.",
+    "url": "https://www.booking.com/attractions/nl/pr9ziglpe9yy-guided-evening-canal-cruise-with-bar-onboard.html?date=2022-11-29&start_time=17%3A00&ticket_type=OFLe4vmuL5x8"
   },
   "Admission to Ripley's Believe It or Not!": {
     "title": "Admission to Ripley's Believe It or Not!",
     "description": "A skip-the-line ticket to explore the Ripley's Museum in Amsterdam",
-    "price": "N.A.",
+    "price": "US$22.29",
     "rating": "93% liked it",
-    "bonus": "N.A."
+    "bonus": "N.A.",
+    "url": "https://www.booking.com/attractions/nl/pr6w1fjh9glu-admission-to-ripleys-believe-it-or-not.html?date=2022-11-29&start_time=13%3A00&ticket_type=OFg1IfIBItad"
   },
   "Amsterdam Canal Cruise": {
     "title": "Amsterdam Canal Cruise",
     "description": "A chance to explore the city's highlights on board a luxury canal boat",
-    "price": "US$20.76",
+    "price": "US$20.61",
     "rating": "N.A.",
-    "bonus": "N.A."
+    "bonus": "N.A.",
+    "url": "https://www.booking.com/attractions/nl/prkskdihhhlz-amsterdam-canal-cruise.html?date=2022-12-01&start_time=11%3A00&ticket_type=OFA0EDbtEubS"
   },
   "Luxury Electric Canal Cruise": {
     "title": "Luxury Electric Canal Cruise",
     "description": "A one-hour cruise from Rijksmuseum to the oldest part of the city",
-    "price": "US$18.97",
+    "price": "US$19.06",
     "rating": "90% liked it",
-    "bonus": "Duration: 60 minutes"
+    "bonus": "Duration: 60 minutes",
+    "url": "https://www.booking.com/attractions/nl/prplixqne6e5-luxury-electric-canal-cruise.html?date=2023-02-04&start_time=11%3A00&ticket_type=OFB30CrFY7xV"
   },
-  "Klimmuur Centraal": { "title": "Klimmuur Centraal" },
-  "Scooter Rent Amsterdam": { "title": "Scooter Rent Amsterdam" },
-  "Amsterdam Dance Centre": { "title": "Amsterdam Dance Centre" },
-  "Lovers Powerzone": { "title": "Lovers Powerzone" },
-  "Bikram Yoga Amsterdam": { "title": "Bikram Yoga Amsterdam" },
-  "De Bosbaan": { "title": "De Bosbaan" },
-  "Borchland, the place to B.": { "title": "Borchland, the place to B." },
-  "MokumBoot": { "title": "MokumBoot" },
-  "Aikidojo": { "title": "Aikidojo" },
-  "Vitae Sport": { "title": "Vitae Sport" },
+  "Admission to AMAZE": {
+    "title": "Admission to AMAZE",
+    "description": "A ticket to participate in an immersive multi-sensory audiovisual experience in Amsterdam",
+    "price": "US$27.94",
+    "rating": "100% liked it",
+    "bonus": "N.A.",
+    "url": "https://www.booking.com/attractions/nl/pr5ebn1ggai6-admission-to-amaze.html?date=2022-11-30&start_time=16%3A30&ticket_type=OFgo9FmjJKSs"
+  },
+  "Klimmuur Centraal": {
+    "title": "Klimmuur Centraal",
+    "url": "https://www.yelp.nl/biz/klimmuur-centraal-amsterdam"
+  },
+  "Scooter Rent Amsterdam": {
+    "title": "Scooter Rent Amsterdam",
+    "url": "https://www.yelp.nl/biz/scooter-rent-amsterdam-amsterdam"
+  },
+  "Amsterdam Dance Centre": {
+    "title": "Amsterdam Dance Centre",
+    "url": "https://www.yelp.nl/biz/amsterdam-dance-centre-amsterdam"
+  },
+  "Lovers Powerzone": {
+    "title": "Lovers Powerzone",
+    "url": "https://www.yelp.nl/biz/lovers-powerzone-amsterdam-3"
+  },
+  "Bikram Yoga Amsterdam": {
+    "title": "Bikram Yoga Amsterdam",
+    "url": "https://www.yelp.nl/biz/bikram-yoga-amsterdam-amsterdam-2"
+  },
+  "De Bosbaan": {
+    "title": "De Bosbaan",
+    "url": "https://www.yelp.nl/biz/de-bosbaan-amstelveen"
+  },
+  "Borchland, the place to B.": {
+    "title": "Borchland, the place to B.",
+    "url": "https://www.yelp.nl/biz/borchland-the-place-to-b-amsterdam-duivendrecht-2"
+  },
+  "MokumBoot": {
+    "title": "MokumBoot",
+    "url": "https://www.yelp.nl/biz/mokumboot-amsterdam-2"
+  },
+  "Aikidojo": {
+    "title": "Aikidojo",
+    "url": "https://www.yelp.nl/biz/aikidojo-amsterdam"
+  },
+  "Vitae Sport": {
+    "title": "Vitae Sport",
+    "url": "https://www.yelp.nl/biz/vitae-sport-amsterdam"
+  },
   "The Upside Down Tickets": {
     "title": "The Upside Down Tickets",
     "description_long": "The Upside Down is the biggest Instagram museum in Europe – but it's more than just a museum. It's part amusement park, part club, part magic mushroom trip! Get your friends together and remember to charge your phones; you'll need battery power for all the photos you'll take in this mind-melting world of fun. Explore the boundaries of your own creativity, trick your brain and tickle your senses.",
     "price": "€24.95",
-    "rating": "4.5"
+    "rating": "4.5",
+    "url": "https://www.tiqets.com/en/the-upside-down-tickets-l172243/?partner=travel_and_destinations"
   },
   "Het Amsterdamse Winterparadijs Tickets": {
     "title": "Het Amsterdamse Winterparadijs Tickets",
     "description_long": "Het Amsterdamse Winterparadijs is an annual winter event featuring seasonal attractions, activities, and live performances.",
     "price": "€24.50",
-    "rating": "4.3"
+    "rating": "4.3",
+    "url": "https://www.tiqets.com/en/het-amsterdamse-winterparadijs-tickets-l1748/?partner=travel_and_destinations"
   },
-  "NEMO Science Museum Tickets": {
-    "title": "NEMO Science Museum Tickets",
-    "description_long": "NEMO Science Museum is a science centre in Amsterdam, located at the Oosterdok. It was built on top of the IJ-tunnel that connects the centre of Amsterdam with the north of the city. The striking building, designed by Italian architect and engineer, Renzo Piano, opened its doors in 1997. Some say the shape of the building mimics the appearance of a large boat, but others suggest that it's actually a reflection of the tunnel it was built upon.",
-    "price": "€17.50",
-    "rating": "4.6"
+  "Keukenhof Tickets": {
+    "title": "Keukenhof Tickets",
+    "description_long": "The tulip is one of the most iconic symbols of the Netherlands – and nowhere are they worshipped more whole-heartedly than at the Keukenhof. Known as the Garden of Europe, Keukenhof has fields of more than seven million tulips spread out over 32 hectares. ",
+    "price": "€42.50",
+    "rating": "4.7",
+    "url": "https://www.tiqets.com/en/keukenhof-tickets-l145517/?partner=travel_and_destinations"
   },
   "Heineken Experience Tickets": {
     "title": "Heineken Experience Tickets",
     "description_long": "The Heineken Experience is located in the original Heineken Brewery. Gerard Adriaan Heineken bought this building back in 1863 when it was the De Hooiberg brewery. He then turned it towards the production of his eponymous beer. The building remained a brewery all the way up to 1988. It was then that it became a museum (and hotspot for Heineken consumption).",
     "price": "€21.00",
-    "rating": "4.6"
+    "rating": "4.6",
+    "url": "https://www.tiqets.com/en/heineken-experience-tickets-l126561/?partner=travel_and_destinations"
+  },
+  "NEMO Science Museum Tickets": {
+    "title": "NEMO Science Museum Tickets",
+    "description_long": "NEMO Science Museum is a science centre in Amsterdam, located at the Oosterdok. It was built on top of the IJ-tunnel that connects the centre of Amsterdam with the north of the city. The striking building, designed by Italian architect and engineer, Renzo Piano, opened its doors in 1997. Some say the shape of the building mimics the appearance of a large boat, but others suggest that it's actually a reflection of the tunnel it was built upon.",
+    "price": "€17.50",
+    "rating": "4.6",
+    "url": "https://www.tiqets.com/en/nemo-science-museum-tickets-l126545/?partner=travel_and_destinations"
   },
   "ARTIS Amsterdam Royal Zoo Tickets": {
     "title": "ARTIS Amsterdam Royal Zoo Tickets",
     "description_long": "The main purpose of ARTIS, the oldest zoo in the Netherlands, is to stimulate the care and love for nature. There are 27 historical buildings in the 140,000 m2 of the park. It's tucked away in a leafy green part of the city (the 'Plantage' District), and is a lovely place for nature lovers.",
     "price": "€25.00",
-    "rating": "4.7"
-  },
-  "Our House Amsterdam Tickets": {
-    "title": "Our House Amsterdam Tickets",
-    "description_long": "Our House is the world’s first modern museum of electronic music culture!",
-    "price": "€19.95",
-    "rating": "4.6"
-  },
-  "XtraCold Icebar Tickets": {
-    "title": "XtraCold Icebar Tickets",
-    "description_long": "Welcome to the coolest bar in Amsterdam (literally). This teeth-chattering locale is the perfect spot to sample the lifestyle of a Polar explorer, without the risk of frostbite. Just meters from the busy Rembrandt Square, this is a great stop on a night on the town in Amsterdam. Free drinks and thermals should keep you warm. The bar is sculpted from 60 tons of natural ice and even your glass here is made from frozen H2O!",
-    "price": "€26.50",
-    "rating": "4.5"
+    "rating": "4.7",
+    "url": "https://www.tiqets.com/en/artis-amsterdam-royal-zoo-tickets-l126535/?partner=travel_and_destinations"
   },
   "Madame Tussauds Amsterdam Tickets": {
     "title": "Madame Tussauds Amsterdam Tickets",
     "description_long": "Madame Tussauds is located in the center of Amsterdam at the ever-busy Dam Square. Founded by wax sculptor Marie Tussaud in the 18th century, this iconic wax museum chain has locations in many cities across the globe, including London, Berlin, New York, Las Vegas, Hong Kong, and Shanghai, and of course, the Dutch capital. ",
     "price": "€22.00",
-    "rating": "4.6"
+    "rating": "4.6",
+    "url": "https://www.tiqets.com/en/madame-tussauds-amsterdam-tickets-l125689/?partner=travel_and_destinations"
+  },
+  "XtraCold Icebar Tickets": {
+    "title": "XtraCold Icebar Tickets",
+    "description_long": "Welcome to the coolest bar in Amsterdam (literally). This teeth-chattering locale is the perfect spot to sample the lifestyle of a Polar explorer, without the risk of frostbite. Just meters from the busy Rembrandt Square, this is a great stop on a night on the town in Amsterdam. Free drinks and thermals should keep you warm. The bar is sculpted from 60 tons of natural ice and even your glass here is made from frozen H2O!",
+    "price": "€26.50",
+    "rating": "4.5",
+    "url": "https://www.tiqets.com/en/xtracold-icebar-tickets-l126560/?partner=travel_and_destinations"
+  },
+  "Our House Amsterdam Tickets": {
+    "title": "Our House Amsterdam Tickets",
+    "description_long": "Our House is the world’s first modern museum of electronic music culture!",
+    "price": "€19.95",
+    "rating": "4.6",
+    "url": "https://www.tiqets.com/en/our-house-amsterdam-tickets-l183995/?partner=travel_and_destinations"
+  },
+  "Amsterdam Light Festival": {
+    "title": "Amsterdam Light Festival",
+    "description_long": "The Amsterdam Light Festival transforms the city's iconic canals into a sparkling winter playground, filled with illuminated artworks from some of the world's top artists. Of course, the best way to experience the dazzling artistry is from the water, letting you get up close and personal with the best the festival from the UNESCO-protected canal network.",
+    "price": "€26.50",
+    "rating": "4.0",
+    "url": "https://www.tiqets.com/en/amsterdam-light-festival-cruises-tickets-l146145/?partner=travel_and_destinations"
   },
   "Amaze Amsterdam Tickets": {
     "title": "Amaze Amsterdam Tickets",
     "description_long": "AMAZE Amsterdam is an immersive experience created by the world's largest dance event organizer ID&T. Visitors experience a journey from head to heart, where they are taken through seven experience worlds filled with state-of-the-art audiovisual technology.",
     "price": "€26.95",
-    "rating": "4.6"
-  },
-  "BODY WORLDS: The Happiness Project Tickets": {
-    "title": "BODY WORLDS: The Happiness Project Tickets",
-    "description_long": "The German anatomist Gunther von Hagens, who invented the plastination technique in the late 1970s at teh University of Heidelberg, developed this exhibition.",
-    "price": "€22.50",
-    "rating": "4.7"
+    "rating": "4.6",
+    "url": "https://www.tiqets.com/en/amaze-amsterdam-a-new-immersive-experience-tickets-l185311/?partner=travel_and_destinations"
   },
   "Stedelijk Museum Amsterdam Tickets": {
     "title": "Stedelijk Museum Amsterdam Tickets",
     "description_long": "The Stedelijk Museum in Amsterdam was founded in 1874 and officially opened its doors in 1895. The building was designed by the architect Adriaan Willem Weissman and is located at the Museum Square, where you can also find The Rijksmuseum and The Van Gogh Museum.",
     "price": "€20.00",
-    "rating": "4.7"
-  },
-  "STRAAT Museum Tickets": {
-    "title": "STRAAT Museum Tickets",
-    "description_long": "Just a quick ferry ride to NDSM from Amsterdam Central Station, you'll find this warehouse museum that pays tribute to a unique medium: street art. With roughly 150 artworks by 140 artists from 32 nationalities, this is your chance to see some of the best street art from around the world without ever leaving Amsterdam.",
-    "price": "€17.50",
-    "rating": "4.9"
+    "rating": "4.7",
+    "url": "https://www.tiqets.com/en/stedelijk-museum-amsterdam-tickets-l127350/?partner=travel_and_destinations"
   },
   "Amsterdam Nightlife Ticket": {
     "title": "Amsterdam Nightlife Ticket",
     "description_short": "Experience Amazing Nights in Amsterdam, with an  Amsterdam Nightlife Ticket!",
-    "price": "Vanaf € 12,73",
-    "author": "Amsterdam Nightlife"
+    "price": "N.A.",
+    "author": "Amsterdam Nightlife",
+    "url": "https://www.eventbrite.nl/e/tickets-amsterdam-nightlife-ticket-210918421677?aff=ebdssbdestsearch"
   },
-  "EUROPEAN WOMEN PAYMENTS NETWORK- ANNUAL CONFERENCE AMS 2022": {
-    "title": "EUROPEAN WOMEN PAYMENTS NETWORK- ANNUAL CONFERENCE AMS 2022",
-    "description_short": "The Event\nEWPN Annual Awards & Conference 2022 at KIT Royal Tropical Institute, Amsterdam",
-    "price": "From €57.49",
-    "author": "EWPN "
+  "NOVEMBER: Shortcutz Amsterdam - Amsterdam Film Network and Screenings": {
+    "title": "NOVEMBER: Shortcutz Amsterdam - Amsterdam Film Network and Screenings",
+    "description_short": "Joins us every Tuesday to watch the coolest Short Films from the new Dutch film talent and meet the makers!! #FreeEvent",
+    "price": "N.A.",
+    "author": "Shortcutz Amsterdam",
+    "url": "https://www.eventbrite.nl/e/tickets-november-shortcutz-amsterdam-amsterdam-film-network-and-screenings-449357288747?aff=ebdssbdestsearch"
+  },
+  "Stand Up Comedy @ De Peper": {
+    "title": "Stand Up Comedy @ De Peper",
+    "description_short": "Free English spoken Stand-Up Comedy Open Mic @ De Peper, Suitable for friends, family members, room mates, and tinder dates.",
+    "price": "N.A.",
+    "author": "Wicked Comedy Amsterdam",
+    "url": "https://www.eventbrite.nl/e/stand-up-comedy-de-peper-tickets-469466796827?aff=ebdssbdestsearch"
   },
   "Amsterdam SurpriseNight Experience": {
     "title": "Amsterdam SurpriseNight Experience",
     "description_short": "When was the last time that you really were surprised?",
-    "price": "Vanaf € 19,54",
-    "author": "Amsterdam Nightlife"
+    "price": "N.A.",
+    "author": "Amsterdam Nightlife",
+    "url": "https://www.eventbrite.nl/e/tickets-amsterdam-surprisenight-experience-212415328967?aff=ebdssbdestsearch"
   },
-  "LEAP Lifeforce Energy Awakening Process - AMSTERDAM with Robin Erkel": {
-    "title": "LEAP Lifeforce Energy Awakening Process - AMSTERDAM with Robin Erkel",
-    "description_short": "Kundalini Activation - Energy Transmission  - Back into the Joy of being Alive",
-    "price": "Sales Ended",
-    "author": "Robin Erkel"
+  "Kerstgala St. Nicolaaslyceum": {
+    "title": "Kerstgala St. Nicolaaslyceum",
+    "description_short": "St. Nicolaaslyceum kerstgala 2022",
+    "price": "N.A.",
+    "author": "Sooscommissie St. Nicolaaslyceum",
+    "url": "https://www.eventbrite.nl/e/registratie-kerstgala-st-nicolaaslyceum-465649087957?aff=ebdssbdestsearch"
   },
-  "Changes4": {
-    "title": "Changes4",
-    "description_short": "Changes4",
-    "price": "Verkoop beëindigd",
-    "author": "Young Amsterdam"
+  "Open House at Reaktor Amsterdam (Personal Invite)": {
+    "title": "Open House at Reaktor Amsterdam (Personal Invite)",
+    "description_short": "Quit horsing around - join us on November 29th for a drink, a talk, and an interview!",
+    "price": "N.A.",
+    "author": "Reaktor Events",
+    "url": "https://www.eventbrite.com/e/open-house-at-reaktor-amsterdam-personal-invite-tickets-463886285367?aff=ebdssbdestsearch"
+  },
+  "Open House @ Reaktor": {
+    "title": "Open House @ Reaktor",
+    "description_short": "Quit horsing around - join us on November 29th for a drink, a talk, and an interview!",
+    "price": "N.A.",
+    "author": "Reaktor Events",
+    "url": "https://www.eventbrite.com/e/open-house-reaktor-tickets-443515275127?aff=ebdssbdestsearch"
+  },
+  "Romantic Amsterdam: Outdoor Escape Game for Couples": {
+    "title": "Romantic Amsterdam: Outdoor Escape Game for Couples",
+    "description_short": "If you’re looking for a new and exciting way of spending time with your one and only, family or friends, this is your Eureka moment!",
+    "price": "N.A.",
+    "author": "Questo - City Exploration Games",
+    "url": "https://www.eventbrite.com/e/romantic-amsterdam-outdoor-escape-game-for-couples-tickets-293750905867?aff=ebdssbdestsearch"
+  },
+  "HackerX - Amsterdam (Full-Stack) 11/29 (Onsite)": {
+    "title": "HackerX - Amsterdam (Full-Stack) 11/29 (Onsite)",
+    "description_short": "You're invited to HackerX, an invite-only recruiting event for developers.",
+    "price": "N.A.",
+    "author": "HackerX",
+    "url": "https://www.eventbrite.com/e/hackerx-amsterdam-full-stack-1129-onsite-tickets-452157484207?aff=ebdssbdestsearch"
+  },
+  "Kick-off Comedy show in Haarlem": {
+    "title": "Kick-off Comedy show in Haarlem",
+    "description_short": "Een avond vol stand-up comedians",
+    "price": "N.A.",
+    "author": "Puncher Comedy Club",
+    "url": "https://www.eventbrite.nl/e/tickets-kick-off-comedy-show-in-haarlem-426093686687?aff=ebdssbdestsearch"
+  },
+  "Avondsessie bij ING": {
+    "title": "Avondsessie bij ING",
+    "description_short": "Avondsessie op dinsdag 29 november bij ING in Amsterdam.",
+    "price": "N.A.",
+    "author": "Power BI Gebruikersgroep",
+    "url": "https://www.eventbrite.nl/e/tickets-avondsessie-bij-ing-468709571947?aff=ebdssbdestsearch"
+  },
+  "Burgerberaden: next level democratie?": {
+    "title": "Burgerberaden: next level democratie?",
+    "description_short": "Volt Kennemerland organiseert op 29 -11 een bijeenkomst over de voor- en nadelen van burgerberaden met Evelien Tonkens en Reint Jan Renes",
+    "price": "N.A.",
+    "author": "Volt Kennemerland",
+    "url": "https://www.eventbrite.com/e/tickets-burgerberaden-next-level-democratie-445885695117?aff=ebdssbdestsearch"
   },
   "Ghosts of Amsterdam: 'Haunting Stories' Outdoor Escape Game": {
     "title": "Ghosts of Amsterdam: 'Haunting Stories' Outdoor Escape Game",
     "description_short": "Looking to get spooked or spook someone else? Then put on your vampire teeth and get booking: this is your opportunity to do exactly that!",
-    "price": "€6.99",
-    "author": "Questo - City Exploration Games"
+    "price": "N.A.",
+    "author": "Questo - City Exploration Games",
+    "url": "https://www.eventbrite.com/e/ghosts-of-amsterdam-haunting-stories-outdoor-escape-game-tickets-350200347667?aff=ebdssbdestsearch"
   },
-  "Improv Comedy Jam": {
-    "title": "Improv Comedy Jam",
-    "description_short": "Every two weeks, STHH plays their improv comedy jams at The 5th in Amsterdam! You can grab a drink and enjoy the show. Free and in English!",
+  "Talking Tech: Ervaren tech vrouw Jacinta Hall": {
+    "title": "Talking Tech: Ervaren tech vrouw Jacinta Hall",
+    "description_short": "Tech vrouw Jacinta Hall vertelt over mentaliteit en zelfvertrouwen binnen de tech wereld.",
+    "price": "N.A.",
+    "author": "Equals",
+    "url": "https://www.eventbrite.nl/e/tickets-talking-tech-ervaren-tech-vrouw-jacinta-hall-465591626087?aff=ebdssbdestsearch"
+  },
+  "3e oploop  toekomst van Oosterwold": {
+    "title": "3e oploop  toekomst van Oosterwold",
+    "description_short": "Het Vervolg – Toen Nu Dan",
+    "price": "N.A.",
+    "author": "Gebiedsteam Oosterwold",
+    "url": "https://www.eventbrite.nl/e/3e-oploop-toekomst-van-oosterwold-tickets-451728370717?aff=ebdssbdestsearch"
+  },
+  "Amsterdam: Guided Highlights Tour by bike": {
+    "title": "Amsterdam: Guided Highlights Tour by bike",
+    "description_short": "See Amsterdam like a local on a bike tour of the city’s major attractions. Riding with an experienced guide, see fascinating sites.",
+    "price": "N.A.",
+    "author": "A-Bike Rental & Tours - Vondelpark",
+    "url": "https://www.eventbrite.com/e/amsterdam-guided-highlights-tour-by-bike-tickets-275584579897?aff=ebdssbdestsearch"
+  },
+  "HackerX - Amsterdam (Full-Stack) Employer Ticket  - 11/29 (Onsite)": {
+    "title": "HackerX - Amsterdam (Full-Stack) Employer Ticket  - 11/29 (Onsite)",
+    "description_short": "HackerX is an invite-only recruiting event connecting innovative companies with top-tier developers in 135+ cities. Scroll down to find out!",
+    "price": "N.A.",
+    "author": "HackerX",
+    "url": "https://www.eventbrite.com/e/hackerx-amsterdam-full-stack-employer-ticket-1129-onsite-tickets-405328397147?aff=ebdssbdestsearch"
+  },
+  "Tournament of the Unknown—The Platform Presents Iran vs USA": {
+    "title": "Tournament of the Unknown—The Platform Presents Iran vs USA",
+    "description_short": "A conversation followed by the Iran vs USA World Cup football match, with a DJ battle and live visuals to disrupt the competition.",
+    "price": "N.A.",
+    "author": "W139",
+    "url": "https://www.eventbrite.nl/e/tickets-tournament-of-the-unknownthe-platform-presents-iran-vs-usa-469064583797?aff=ebdssbdestsearch"
+  },
+  "1 day co-work place": {
+    "title": "1 day co-work place",
+    "description_short": "Een dag werken op de mooiste werkplek van Nederland!",
+    "price": "Vanaf € 30,25",
+    "author": "Cupola XS",
+    "url": "https://www.eventbrite.nl/e/tickets-1-day-co-work-place-363944155767?aff=ebdssbdestsearch"
+  },
+  "Electric fatbike testride event from our Urban Drivestyle Brandstore in NL": {
+    "title": "Electric fatbike testride event from our Urban Drivestyle Brandstore in NL",
+    "description_short": "Book your testride on one of our urban electric fatbikes from Urbandrivestyle",
     "price": "Gratis",
-    "author": "Stranger Things Have Happened"
-  },
-  "Hollandse Luchten Zaanstad: samen meetplan bepalen": {
-    "title": "Hollandse Luchten Zaanstad: samen meetplan bepalen",
-    "description_short": "Kom samen het meetplan maken voor Hollandse Luchten in Zaanstad op maandag 28 november.",
-    "price": "Verkoop beëindigd",
-    "author": "Waag"
-  },
-  "Arena Nossa Roda - Brazil x Servia": {
-    "title": "Arena Nossa Roda - Brazil x Servia",
-    "description_short": "Arena Nossa Roda is a place to watch the brazilian games, have some fun with roda de samba before, at halftime and after the game.",
-    "price": "€10",
-    "author": "Nossa Roda Amsterdam"
-  },
-  "REGUSNEDERLAND.NL- Starting a Business in IT SAP Vacatures Breda Maastricht": {
-    "title": "REGUSNEDERLAND.NL- Starting a Business in IT SAP Vacatures Breda Maastricht",
-    "description_short": "DAEB -Techrabota.bg ltd Strong Business Plan for Any Industry Today. Save Time and Cut the Stress. Create a Strong Business Plan in 1/2",
-    "price": "€ 49",
-    "author": "Mr. Data Business School - Amsterdam Centre"
-  },
-  "XADAT.NL University. WEESPERSTRAAT 61,63,67,103,105 Techrabota.bg ltd DAEB": {
-    "title": "XADAT.NL University. WEESPERSTRAAT 61,63,67,103,105 Techrabota.bg ltd DAEB",
-    "description_short": "XADAT.NL University. WEESPERSTRAAT 61,63,67,103,105 Techrabota.bg ltd DAEB Bootcamp With Job Placement Guarantee in Amsterdam (SAP BI Resume",
-    "price": "€ 25.162,80",
-    "author": "Mr. Data Business School - Amsterdam Centre"
-  },
-  "SAP Cursus logistiek LOI Nieuwe Keizersgracht 88, SAP software training": {
-    "title": "SAP Cursus logistiek LOI Nieuwe Keizersgracht 88, SAP software training",
-    "description_short": "Nieuwe Keizersgracht 88,100 SAP software training regus TECHRABOTA.BG LTD course cost fees Mr Data SAP cursus logistiek, sap cursus gratis",
-    "price": "Vanaf € 419,51",
-    "author": "Mr. Data Business School"
-  },
-  "REGUSNEDERLAND.NL- free virtual office addresses uk or BG?": {
-    "title": "REGUSNEDERLAND.NL- free virtual office addresses uk or BG?",
-    "description_short": "info@mr-data.nl, virual office addresses uk - your virtual office london, office cost, Office Space For Rent London of Bulgeria?",
-    "price": "€ 49",
-    "author": "Mr. Data Business School - Amsterdam Centre"
-  },
-  "Startup Amsterdam. How To Start Up Your Own Business Company + Google seo": {
-    "title": "Startup Amsterdam. How To Start Up Your Own Business Company + Google seo",
-    "description_short": "Weesperstraat 101,103  Metropoolgebouwhuisregt\nHow to start up a business, expat center amsterdam, international business school,\nMoving",
-    "price": "€ 363,95",
-    "author": "Mr Data Amsterdam | SEO Service | Google Experts"
-  },
-  "Kan ik SAP leren? MR DATA BUSINESS SCHOOL REGUSNEDERLAND.NL Virual Offices": {
-    "title": "Kan ik SAP leren? MR DATA BUSINESS SCHOOL REGUSNEDERLAND.NL Virual Offices",
-    "description_short": "MondyHolten (Haiti) klantgerichtheid en big data gedreven, met 8+ jaar ervaring als Business Analyst & BI",
-    "price": "€ 1.573,80",
-    "author": "XADAT.NL ICT Opleiding & Mr Data Business School"
-  },
-  "Techrabota.bg ltd SAP software training Weesperstraat 105 course cost fees": {
-    "title": "Techrabota.bg ltd SAP software training Weesperstraat 105 course cost fees",
-    "description_short": "Techrabota.bg ltd - Mr Data  Nieuwe Prinsengracht Metropoolgebouw SAP software training Weesperstraat 105 course cost fees Mr.Data",
-    "price": "Vanaf € 419,51",
-    "author": "Mr. Data Business School"
-  },
-  "TECHRABOTA.BG LTD  MR BIG Data // Basis SAP ERP  / Omscholen naar ict 2022": {
-    "title": "TECHRABOTA.BG LTD  MR BIG Data // Basis SAP ERP  / Omscholen naar ict 2022",
-    "description_short": "TECHRABOTA.BG LTD - METROPOOLGEBOUW.NL Big Data Business School en vergroot uw kansen op de arbeidsmarkt ! SAP Basis  Data Business School",
-    "price": "€ 425,80",
-    "author": "Mr Data Business School, Amsterdam Cursus, MBO en HBO Opleidingen (via tran..."
-  },
-  "Techrabota.bg ltd Mr Data Sap basis in 21 days -  Sap Basis Step By Step": {
-    "title": "Techrabota.bg ltd Mr Data Sap basis in 21 days -  Sap Basis Step By Step",
-    "description_short": "In 3 sessies geweldig inzicht in de essentie van SAP. Bel Mr Data Amsterdam +31616073107 info@mr-data.nl\nOpen Inschrijvingen Trainingen | K",
-    "price": "€ 2.132,93",
-    "author": "Mr. Data Business School - Amsterdam Centre"
-  },
-  "Techrabota.bg ltd Mr Data Business School of Technology Int CampusMetropool": {
-    "title": "Techrabota.bg ltd Mr Data Business School of Technology Int CampusMetropool",
-    "description_short": "Techrabota.BG Ltd h.o.d.n. Mr. Data Business School of Technology International Amsterdam Campus Metropool.Weesperstraat 63,65,67,101,103",
-    "price": "€ 25.162,80",
-    "author": "Mr. Data Business School - Amsterdam Centre"
-  },
-  "REGUSNEDERLAND.NL Starting Business  IT SAP Vacatures Rotterdam, Utrecht": {
-    "title": "REGUSNEDERLAND.NL Starting Business  IT SAP Vacatures Rotterdam, Utrecht",
-    "description_short": "DAEB -Techrabota.bg ltd Strong Business Plan for Any Industry Today. Save Time and Cut the Stress. Create a Strong Business Plan in 1/2",
-    "price": "€ 49",
-    "author": "Mr. Data Business School - Amsterdam Centre"
+    "author": "Urban Drivestyle Amsterdam",
+    "url": "https://www.eventbrite.com/e/tickets-electric-fatbike-testride-event-from-our-urban-drivestyle-brandstore-in-nl-450916642817?aff=ebdssbdestsearch"
   }
 }

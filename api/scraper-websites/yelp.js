@@ -60,6 +60,8 @@ async function yelp() {
     const attractionData = await page.evaluate(() => {
       const tmp = {};
       tmp.title = document.querySelector(".css-1se8maq").textContent;
+      tmp.url = window.location.href;
+
       return tmp;
     });
 

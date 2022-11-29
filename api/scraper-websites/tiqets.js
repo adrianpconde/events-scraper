@@ -100,6 +100,7 @@ async function tiqets() {
       } catch (error) {
         tmp.rating = "N.A.";
       }
+      tmp.url = window.location.href;
 
       return tmp;
     });

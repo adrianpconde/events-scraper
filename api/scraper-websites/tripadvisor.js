@@ -99,6 +99,7 @@ async function tripadvisor() {
       } catch (error) {
         tmp.category = "N.A.";
       }
+      tmp.url = window.location.href;
 
       return tmp;
     });

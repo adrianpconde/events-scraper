@@ -112,6 +112,7 @@ async function booking() {
       } catch (error) {
         tmp.bonus = "N.A.";
       }
+      tmp.url = window.location.href;
 
       return tmp;
     });
@@ -126,7 +127,7 @@ async function booking() {
 
   await context.close();
 
-  return bookingData
+  return bookingData;
 }
 
 module.exports = {

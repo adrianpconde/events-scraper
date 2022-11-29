@@ -84,6 +84,7 @@ async function eventbrite() {
       } catch (error) {
         tmp.author = "N.A.";
       }
+      tmp.url = window.location.href;
 
       return tmp;
     });
