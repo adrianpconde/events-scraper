@@ -22,7 +22,7 @@ async function tripadvisor() {
 
   await page.click("#taplc_trip_search_home_attractions_component_0");
 
-  // Introducing city's name on the searchbar:
+  // Introducing city's name on searchbar:
 
   let cityName = "amsterdam";
   await page.type("#taplc_trip_search_home_attractions_component_0", cityName); // introducing city's name
@@ -39,7 +39,7 @@ async function tripadvisor() {
   await page.click("#onetrust-accept-btn-handler");
   await delay(1000);
 
-  // Introducing city's name on the searchbar and selecting first acception on searchbar:
+  // Introducing city's name on searchbar and selecting first acception on searchbar:
 
   await page.click("#taplc_trip_search_home_attractions_component_0");
   await page.click(".GzJDZ");

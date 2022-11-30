@@ -32,7 +32,7 @@ async function booking() {
   }
   await delay(1000);
 
-  // Introducing city's name on the searchbar:
+  // Introducing city's name on searchbar:
 
   await page.click(".css-uigm6z");
 

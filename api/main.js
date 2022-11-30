@@ -5,20 +5,26 @@ const bookingScraper = require("./scraper-websites/booking");
 const yelpScraper = require("./scraper-websites/yelp");
 const tiqetsScraper = require("./scraper-websites/tiqets");
 const eventbriteScraper = require("./scraper-websites/eventbrite");
+const ticketswapScraper = require("./scraper-websites/ticketswap");
+const musementScraper = require("./scraper-websites/musement");
 
 async function data() {
-  const tripadvisorData = await tripadvisorScraper.tripadvisor();
   const bookingData = await bookingScraper.booking();
+  const tripadvisorData = await tripadvisorScraper.tripadvisor();
   const yelpData = await yelpScraper.yelp();
   const tiqetsData = await tiqetsScraper.tiqets();
   const eventbriteData = await eventbriteScraper.eventbrite();
+  const ticketswapData = await ticketswapScraper.ticketswap();
+  const musementData = await musementScraper.musement();
 
   const eventsData = {
-    ...tripadvisorData,
     ...bookingData,
+    ...tripadvisorData,
     ...yelpData,
     ...tiqetsData,
     ...eventbriteData,
+    ...ticketswapData,
+    ...musementData,
   };
 
   const eventsContent = JSON.stringify(eventsData);
