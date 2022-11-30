@@ -99,7 +99,7 @@ async function eventbrite() {
 
   await context.close();
 
-  return eventbriteData
+  return eventbriteData;
 }
 
 module.exports = {

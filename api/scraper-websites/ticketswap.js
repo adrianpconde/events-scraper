@@ -20,10 +20,10 @@ async function ticketswap() {
 
   await page.goto("https://www.ticketswap.com/");
 
-  // Cookies accepted:
+  // Cookies accepted (Not necessary with headless: true on puppeteer.launch):
 
-  await page.waitForSelector("button.css-853sc5.e1dvqv261");
-  await page.click("button.css-853sc5.e1dvqv261");
+  // await page.waitForSelector("button.css-853sc5.e1dvqv261");
+  // await page.click("button.css-853sc5.e1dvqv261");
 
   function delay(time) {
     return new Promise(function (resolve) {

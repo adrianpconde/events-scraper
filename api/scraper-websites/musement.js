@@ -103,7 +103,7 @@ async function musement() {
   }
 
   const musementData = thingsToDo.reduce((acc, item) => {
-    acc[item.title] = title;
+    acc[item.title] = item;
     return acc;
   }, {});
 
