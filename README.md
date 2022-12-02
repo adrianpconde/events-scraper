@@ -20,9 +20,12 @@ All these web scrapers are imported to a **'main.js'** file (inside the **'api'*
 
 Clone the repository and install all the dependencies with `npm i`
 
-Then you can choose the city what you want. There is a variable in every web scraper where you can type the name. In this case, the default city selected is Amsterdam. There is a single exception: in the case of the Yelp website, the city search process is done in a different way, with all the URL addresses of each city in the Netherlands associated to a variable with the same city name. All the scraping process is indicated with comment lines in each file.
+Then you can choose the city what you want. There is a variable in every web scraper where you can type the name. In this case, the default city selected is Amsterdam. 
+
+There is a single exception: in the case of the Yelp website, the city search process is done in a different way, with all the URL addresses of each city in the Netherlands associated to a variable with the same city name. All the scraping process is indicated with comment lines in each file.
 
 ## What I used
 
 The programa was built on **JavaScript** with **Node.JS** and **Puppeteer/Puppeteer-Core**(19.2.2). 
+
 With both libraries the web scraper can be built, but I have used the second one instead of the regular Puppeteer when working from a computer with Apple Silicon / M1.
