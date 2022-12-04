@@ -1,10 +1,12 @@
 const puppeteer = require("puppeteer-core");
 
+const cityName = "amsterdam";
+
 async function booking() {
   const browser = await puppeteer.launch({
     executablePath:
       "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
-    headless: true,
+    headless: false,
     args: ["--incognito"],
   });
 
@@ -22,8 +24,8 @@ async function booking() {
 
   // Cookies accepted (Not necessary with headless: true on puppeteer.launch):
 
-  // await page.waitForSelector("#onetrust-accept-btn-handler");
-  // await page.click("#onetrust-accept-btn-handler");
+  await page.waitForSelector("#onetrust-accept-btn-handler");
+  await page.click("#onetrust-accept-btn-handler");
 
   function delay(time) {
     return new Promise(function (resolve) {
@@ -35,8 +37,6 @@ async function booking() {
   // Introducing city's name on searchbar:
 
   await page.click(".css-uigm6z");
-
-  let cityName = "amsterdam";
 
   await page.type(".css-uigm6z", cityName);
 
@@ -50,30 +50,59 @@ async function booking() {
 
   await delay(3000);
 
-  // Taking URL of each event:
+  // Taking URL of attractions in the city and each event page link:
 
-  await page.waitForSelector(".css-0");
+  const eventsPages = [];
 
-  const events = await page.evaluate(() => {
-    const attractions = document.querySelectorAll("a[rel=noreferrer]");
-
-    const links = [];
-    for (let attraction of attractions) {
-      links.push(attraction.href);
-    }
-    return links;
+  const currentPage = await page.evaluate(() => {
+    return window.location.href;
   });
+  eventsPages.push(currentPage);
 
-  await delay(4000);
+  for (let i = 1; i <= 20; i++) {
+    await page.waitForSelector("div.f32a99c8d1.f78c3700d2 > button");
+    await page.click("div.f32a99c8d1.f78c3700d2 > button");
+
+    await delay(2500);
+
+    let nextPage = await page.evaluate(() => {
+      return window.location.href;
+    });
+    eventsPages.push(nextPage);
+  }
+
+  const events = [];
+
+  for (let eventPage of eventsPages) {
+    await page.goto(eventPage);
+    await delay(1500);
+
+    const bookingEvents = await page.evaluate(() => {
+      const attractions = document.querySelectorAll("a[rel=noreferrer]");
+      const links = [];
+      for (let attraction of attractions) {
+        links.push(attraction.href);
+      }
+      return links;
+    });
+
+    await delay(1500);
+
+    events.push(bookingEvents);
+  }
+
+  const allEvents = events.flat();
+
+  console.log("Booking: ", allEvents.length);
 
   // Array created and loop on every event to take the data:
 
   const thingsToDo = [];
-  for (let event of events) {
+  for (let event of allEvents) {
     await page.goto(event);
     await page.waitForSelector(".css-1hp67ie");
 
-    await delay(2000);
+    await delay(1500);
 
     const attractionData = await page.evaluate(() => {
       const tmp = {};
@@ -104,13 +133,6 @@ async function booking() {
         ).textContent;
       } catch (error) {
         tmp.rating = "N.A.";
-      }
-      try {
-        tmp.bonus = document.querySelector(
-          "div.css-1qm1lh > ul > li:nth-child(3) > div > div"
-        ).textContent;
-      } catch (error) {
-        tmp.bonus = "N.A.";
       }
       tmp.url = window.location.href;
 

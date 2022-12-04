@@ -1,10 +1,12 @@
 const puppeteer = require("puppeteer-core");
 
+const cityName = "amsterdam";
+
 async function tripadvisor() {
   const browser = await puppeteer.launch({
     executablePath:
       "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
-    headless: true,
+    headless: false,
     args: ["--incognito"],
   });
 
@@ -20,12 +22,14 @@ async function tripadvisor() {
 
   await page.goto("https://www.tripadvisor.com/Attractions");
 
-  await page.click("#taplc_trip_search_home_attractions_component_0");
-
   // Introducing city's name on searchbar:
-
-  let cityName = "amsterdam";
-  await page.type("#taplc_trip_search_home_attractions_component_0", cityName); // introducing city's name
+  await page.click(
+    "#component_2 > div > div > form > input.qjfqs._G.B-.z._J.Cj.R0"
+  );
+  await page.type(
+    "#component_2 > div > div > form > input.qjfqs._G.B-.z._J.Cj.R0",
+    cityName
+  );
 
   function delay(time) {
     return new Promise(function (resolve) {
@@ -46,30 +50,63 @@ async function tripadvisor() {
 
   // Access to "See All" attractions page on Tripadvisor:
 
-  const attractionPage = await page.evaluate(() => {
+  const attractionsPage = await page.evaluate(() => {
     return window.location.href.split("Activities-").join("oa0-");
   });
 
-  await page.goto(attractionPage);
+  await page.goto(attractionsPage);
 
   await delay(2000);
 
-  // Taking URL of each event:
+  // Taking URL of attractions in the city and each event page link:
 
-  const events = await page.evaluate(() => {
-    const attractions = document.querySelectorAll(".BUupS");
+  const eventsPages = [];
 
-    const links = [];
-    for (let attraction of attractions) {
-      links.push(attraction.href);
-    }
-    return links;
+  const currentPage = await page.evaluate(() => {
+    return window.location.href;
   });
+  eventsPages.push(currentPage);
 
-  // Array created and loop on every event to take the data:
+  for (let i = 1; i <= 20; i++) {
+    await page.click("[aria-label='Next page']");
+
+    await delay(2000);
+
+    let nextPage = await page.evaluate(() => {
+      return window.location.href;
+    });
+    eventsPages.push(nextPage);
+  }
+  console.log(eventsPages);
+
+  const events = [];
+
+  for (let eventPage of eventsPages) {
+    await page.goto(eventPage);
+    await delay(1000);
+
+    const tripadvisorEvents = await page.evaluate(() => {
+      const attractions = document.querySelectorAll(".BUupS");
+      const links = [];
+      for (let attraction of attractions) {
+        links.push(attraction.href);
+      }
+      return links;
+    });
+
+    await delay(1500);
+
+    events.push(tripadvisorEvents);
+  }
+
+  const allEvents = events.flat();
+
+  console.log("Tripadvisor:", allEvents.length);
+
+  // // Array created and loop on every event to take the data:
 
   const thingsToDo = [];
-  for (let event of events) {
+  for (let event of allEvents) {
     await page.goto(event);
     await page.waitForSelector(".eIegw");
 

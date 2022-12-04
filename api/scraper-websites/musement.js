@@ -1,10 +1,12 @@
 const puppeteer = require("puppeteer-core");
 
+const cityName = "amsterdam";
+
 async function musement() {
   const browser = await puppeteer.launch({
     executablePath:
       "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
-    headless: true,
+    headless: false,
     args: ["--incognito"],
   });
 
@@ -18,8 +20,6 @@ async function musement() {
 
   // Going to Booking website:
 
-  let cityName = "amsterdam";
-
   await page.goto(`https://www.musement.com/nl/search/?q=${cityName}`);
 
   function delay(time) {
@@ -30,7 +30,7 @@ async function musement() {
 
   await delay(2000);
 
-  // Taking URL of each event:
+  // Taking URL of attractions in the city and each event page link:
 
   await page.waitForSelector(".src-content-3JLt");
 

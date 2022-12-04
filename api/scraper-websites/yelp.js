@@ -1,10 +1,12 @@
 const puppeteer = require("puppeteer-core");
 
+const cityName = "amsterdam";
+
 async function yelp() {
   const browser = await puppeteer.launch({
     executablePath:
       "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
-    headless: true,
+    headless: false,
     args: ["--incognito"],
   });
 
@@ -18,7 +20,7 @@ async function yelp() {
 
   // Going to Yelp website:
 
-  await page.goto("https://www.yelp.nl/amsterdam");
+  await page.goto(`https://www.yelp.nl/${cityName}`);
 
   function delay(time) {
     return new Promise(function (resolve) {
@@ -36,7 +38,7 @@ async function yelp() {
 
   await delay(1000);
 
-  // Taking URL of each event:
+  // Taking URL of attractions in the city and each event page link:
 
   const events = await page.evaluate(() => {
     const attractions = document.querySelectorAll(".css-8dlaw4");

@@ -1,5 +1,7 @@
 const puppeteer = require("puppeteer-core");
 
+const cityName = "amsterdam";
+
 async function ticketswap() {
   const browser = await puppeteer.launch({
     executablePath:
@@ -22,8 +24,8 @@ async function ticketswap() {
 
   // Cookies accepted (Not necessary with headless: true on puppeteer.launch):
 
-  // await page.waitForSelector("button.css-853sc5.e1dvqv261");
-  // await page.click("button.css-853sc5.e1dvqv261");
+  await page.waitForSelector("button.css-853sc5.e1dvqv261");
+  await page.click("button.css-853sc5.e1dvqv261");
 
   function delay(time) {
     return new Promise(function (resolve) {
@@ -34,39 +36,20 @@ async function ticketswap() {
 
   // Introducing city's name on searchbar:
 
-  let cityName = "amsterdam";
-
   await page.type("#site-search-input", cityName);
 
   await delay(2000);
 
   await page.click("#site-search-item-0");
 
-  // Taking URL of each event:
+  // Taking URL of attractions in the city and each event page link:
 
   await page.waitForSelector(".css-1sovwns");
 
-  await delay(1000);
-
-  await page.click(".e1mdulau0");
-
-  await delay(500);
-
-  await page.click(".e1mdulau0");
-
-  await delay(500);
-
-  await page.click(".e1mdulau0");
-
-  await delay(500);
-
-  await page.click(".e1mdulau0");
-
-  await delay(500);
-
-  await page.click(".e1mdulau0");
-
-  await delay(500);
+  for (let i = 1; i <= 30; i++) {
+    await page.click(".e1mdulau0");
+    await delay(500);
+  }
 
   const events = await page.evaluate(() => {
     const attractions = document.querySelectorAll(
@@ -79,6 +62,8 @@ async function ticketswap() {
     }
     return links;
   });
+
+  console.log("Ticketswap: ", events.length);
 
   await delay(3000);
 

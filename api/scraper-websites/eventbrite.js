@@ -1,10 +1,12 @@
 const puppeteer = require("puppeteer-core");
 
+const cityName = "amsterdam";
+
 async function eventbrite() {
   const browser = await puppeteer.launch({
     executablePath:
       "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
-    headless: true,
+    headless: false,
     args: ["--incognito"],
   });
 
@@ -19,7 +21,7 @@ async function eventbrite() {
   // Going to Eventbrite website (just events on Amsterdam):
 
   await page.goto(
-    "https://www.eventbrite.com/d/netherlands--amsterdam/events--today/"
+    `https://www.eventbrite.com/d/netherlands--${cityName}/all-events/`
   );
 
   function delay(time) {
@@ -33,28 +35,60 @@ async function eventbrite() {
   // Cookies accepted:
 
   await page.waitForSelector(".evidon-banner-acceptbutton");
-  await page.click(".evidon-banner-acceptbutton"); // cookies
+  await page.click(".evidon-banner-acceptbutton");
 
   await delay(2000);
 
-  // Taking URL of each event:
+  // Taking URL of attractions in the city and each event page link:
 
-  const events = await page.evaluate(() => {
-    const attractions = document.querySelectorAll(
-      ".eds-event-card-content--standard > div.eds-event-card-content__content-container.eds-l-pad-right-4 > div > div > div.eds-event-card-content__primary-content > a"
-    );
+  const eventsPages = [];
 
-    const links = [];
-    for (let attraction of attractions) {
-      links.push(attraction.href);
-    }
-    return links;
+  const currentPage = await page.evaluate(() => {
+    return window.location.href;
   });
+  eventsPages.push(currentPage);
+
+  for (let i = 1; i <= 50; i++) {
+    await page.waitForSelector("[data-spec='page-next']");
+    await page.click("[data-spec='page-next']");
+
+    await delay(2500);
+
+    let nextPage = await page.evaluate(() => {
+      return window.location.href;
+    });
+    eventsPages.push(nextPage);
+  }
+  const events = [];
+
+  for (let eventPage of eventsPages) {
+    await page.goto(eventPage);
+    await delay(1000);
+
+    const eventbriteEvents = await page.evaluate(() => {
+      const attractions = document.querySelectorAll(
+        ".eds-event-card-content--standard > div.eds-event-card-content__content-container.eds-l-pad-right-4 > div > div > div.eds-event-card-content__primary-content > a"
+      );
+      const links = [];
+      for (let attraction of attractions) {
+        links.push(attraction.href);
+      }
+      return links;
+    });
+
+    await delay(1500);
+
+    events.push(eventbriteEvents);
+  }
+
+  const allEvents = events.flat();
+
+  console.log("Eventbite: ", allEvents.length);
 
   // Array created and loop on every event to take the data:
 
   const thingsToDo = [];
-  for (let event of events) {
+  for (let event of allEvents) {
     await page.goto(event);
     await page.waitForSelector(".event-title");
 

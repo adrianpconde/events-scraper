@@ -30,7 +30,11 @@ async function data() {
     ...ceetizData,
   };
 
-  const eventsContent = JSON.stringify(eventsData);
+  const eventKeys = Object.keys(eventsData).sort();
+  const orderedData = {};
+  eventKeys.forEach((el) => (orderedData[el] = eventsData[el]));
+
+  const eventsContent = JSON.stringify(orderedData);
   console.log(eventsContent);
 
   fs.writeFile("events.json", eventsContent, "utf8", function (err) {
@@ -42,7 +46,7 @@ async function data() {
     console.log("JSON file has been saved.");
   });
 
-  return eventsData;
+  return orderedData;
 }
 
 data();
