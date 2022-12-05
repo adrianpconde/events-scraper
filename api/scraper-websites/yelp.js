@@ -40,20 +40,58 @@ async function yelp() {
 
   // Taking URL of attractions in the city and each event page link:
 
-  const events = await page.evaluate(() => {
-    const attractions = document.querySelectorAll(".css-8dlaw4");
+  const eventsPages = [];
 
-    const links = [];
-    for (let attraction of attractions) {
-      links.push(attraction.href);
-    }
-    return links;
+  const currentPage = await page.evaluate(() => {
+    return window.location.href;
   });
+  eventsPages.push(currentPage);
+
+  for (let i = 0; i <= 20; i++) {
+    await page.waitForSelector(
+      "#main-content > div > ul > li:nth-child(13) > div > div:nth-child(1) > div > div:nth-child(11) > span > a"
+    );
+    await page.click(
+      "#main-content > div > ul > li:nth-child(13) > div > div:nth-child(1) > div > div:nth-child(11) > span > a"
+    );
+
+    await delay(2500);
+
+    let nextPage = await page.evaluate(() => {
+      return window.location.href;
+    });
+    eventsPages.push(nextPage);
+  }
+
+  const events = [];
+
+  for (let eventPage of eventsPages) {
+    await page.goto(eventPage);
+    await delay(1500);
+
+    const yelpEvents = await page.evaluate(() => {
+      const attractions = document.querySelectorAll(".css-8dlaw4");
+
+      const links = [];
+      for (let attraction of attractions) {
+        links.push(attraction.href);
+      }
+      return links;
+    });
+
+    await delay(1500);
+
+    events.push(yelpEvents);
+  }
+
+  const allEvents = events.flat();
+
+  console.log("Yelp: ", allEvents.length);
 
   // Array created and loop on every event to take the data:
 
   const thingsToDo = [];
-  for (let event of events) {
+  for (let event of allEvents) {
     await page.goto(event);
     await page.waitForSelector(".css-1se8maq");
 
@@ -70,14 +108,9 @@ async function yelp() {
     thingsToDo.push(attractionData);
   }
 
-  const yelpData = thingsToDo.reduce((acc, item) => {
-    acc[item.title] = item;
-    return acc;
-  }, {});
-
   await context.close();
 
-  return yelpData;
+  return thingsToDo;
 }
 
 module.exports = {

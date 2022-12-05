@@ -126,14 +126,9 @@ async function tiqets() {
     thingsToDo.push(attractionData);
   }
 
-  const tiqetsData = thingsToDo.reduce((acc, item) => {
-    acc[item.title] = item;
-    return acc;
-  }, {});
-
   await context.close();
 
-  return tiqetsData;
+  return thingsToDo;
 }
 
 module.exports = {

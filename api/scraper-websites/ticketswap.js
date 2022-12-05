@@ -6,7 +6,7 @@ async function ticketswap() {
   const browser = await puppeteer.launch({
     executablePath:
       "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
-    headless: true,
+    headless: false,
     args: ["--incognito"],
   });
 
@@ -45,6 +45,8 @@ async function ticketswap() {
   // Taking URL of attractions in the city and each event page link:
 
   await page.waitForSelector(".css-1sovwns");
+
+  await delay(2000);
 
   for (let i = 1; i <= 30; i++) {
     await page.click(".e1mdulau0");
@@ -107,14 +109,9 @@ async function ticketswap() {
     thingsToDo.push(attractionData);
   }
 
-  const ticketswapData = thingsToDo.reduce((acc, item) => {
-    acc[item.title] = item;
-    return acc;
-  }, {});
-
   await context.close();
 
-  return ticketswapData;
+  return thingsToDo;
 }
 
 module.exports = {

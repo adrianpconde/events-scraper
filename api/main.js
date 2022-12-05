@@ -10,29 +10,76 @@ const musementScraper = require("./scraper-websites/musement");
 const ceetizScraper = require("./scraper-websites/ceetiz");
 
 async function data() {
-  const bookingData = await bookingScraper.booking();
-  const tripadvisorData = await tripadvisorScraper.tripadvisor();
-  const yelpData = await yelpScraper.yelp();
-  const tiqetsData = await tiqetsScraper.tiqets();
-  const eventbriteData = await eventbriteScraper.eventbrite();
-  const ticketswapData = await ticketswapScraper.ticketswap();
-  const musementData = await musementScraper.musement();
-  const ceetizData = await ceetizScraper.ceetiz();
+  const eventsData = [];
 
-  const eventsData = {
-    ...bookingData,
-    ...tripadvisorData,
-    ...yelpData,
-    ...tiqetsData,
-    ...eventbriteData,
-    ...ticketswapData,
-    ...musementData,
-    ...ceetizData,
-  };
+  try {
+    const bookingData = await bookingScraper.booking();
+    eventsData.push(bookingData);
+  } catch (error) {
+    console.log("An error occured while scraping Booking data");
+    console.log(error);
+  }
+  try {
+    const tripadvisorData = await tripadvisorScraper.tripadvisor();
+    eventsData.push(tripadvisorData);
+  } catch (error) {
+    console.log("An error occured while scraping Tripadvisor data");
+    console.log(error);
+  }
+  try {
+    const yelpData = await yelpScraper.yelp();
+    eventsData.push(yelpData);
+  } catch (error) {
+    console.log("An error occured while scraping Yelp data");
+    console.log(error);
+  }
+  try {
+    const tiqetsData = await tiqetsScraper.tiqets();
+    eventsData.push(tiqetsData);
+  } catch (error) {
+    console.log("An error occured while scraping Tiqets data");
+    console.log(error);
+  }
+  try {
+    const eventbriteData = await eventbriteScraper.eventbrite();
+    eventsData.push(eventbriteData);
+  } catch (error) {
+    console.log("An error occured while scraping Eventbrite data");
+    console.log(error);
+  }
+  try {
+    const ticketswapData = await ticketswapScraper.ticketswap();
+    eventsData.push(ticketswapData);
+  } catch (error) {
+    console.log("An error occured while scraping Ticketswap data");
+    console.log(error);
+  }
+  try {
+    const musementData = await musementScraper.musement();
+    eventsData.push(musementData);
+  } catch (error) {
+    console.log("An error occured while scraping Musement data");
+    console.log(error);
+  }
+  try {
+    const ceetizData = await ceetizScraper.ceetiz();
+    eventsData.push(ceetizData);
+  } catch (error) {
+    console.log("An error occured while scraping Ceetiz data");
+    console.log(error);
+  }
 
-  const eventKeys = Object.keys(eventsData).sort();
+  const allEvents = eventsData.flat();
+
+  const allData = allEvents.reduce((acc, item) => {
+    acc[item.title] = item;
+    return acc;
+  }, {});
+
+  const eventKeys = Object.keys(allData).sort();
+
   const orderedData = {};
-  eventKeys.forEach((el) => (orderedData[el] = eventsData[el]));
+  eventKeys.forEach((el) => (orderedData[el] = allData[el]));
 
   const eventsContent = JSON.stringify(orderedData);
   console.log(eventsContent);

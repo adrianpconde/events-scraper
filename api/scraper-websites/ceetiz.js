@@ -48,6 +48,8 @@ async function ceetiz() {
 
   await delay(2000);
 
+  console.log("Ceetiz: ", events.length);
+
   // Array created and loop on every event to take the data:
 
   const thingsToDo = [];
@@ -118,14 +120,9 @@ async function ceetiz() {
     thingsToDo.push(attractionData);
   }
 
-  const ceetizData = thingsToDo.reduce((acc, item) => {
-    acc[item.title] = item;
-    return acc;
-  }, {});
-
   await context.close();
 
-  return ceetizData;
+  return thingsToDo;
 }
 
 module.exports = {

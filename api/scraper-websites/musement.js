@@ -32,6 +32,13 @@ async function musement() {
 
   // Taking URL of attractions in the city and each event page link:
 
+  for (let i = 1; i <= 10; i++) {
+    await page.click(
+      "[data-test='searchPage-loadMore-btn']"
+    );
+    await delay(1500);
+  }
+
   await page.waitForSelector(".src-content-3JLt");
 
   const events = await page.evaluate(() => {
@@ -47,6 +54,8 @@ async function musement() {
   });
 
   await delay(2000);
+
+  console.log("Musement: ", events.length);
 
   // Array created and loop on every event to take the data:
 
@@ -102,14 +111,9 @@ async function musement() {
     thingsToDo.push(attractionData);
   }
 
-  const musementData = thingsToDo.reduce((acc, item) => {
-    acc[item.title] = item;
-    return acc;
-  }, {});
-
   await context.close();
 
-  return musementData;
+  return thingsToDo;
 }
 
 module.exports = {

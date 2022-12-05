@@ -59,7 +59,7 @@ async function booking() {
   });
   eventsPages.push(currentPage);
 
-  for (let i = 1; i <= 20; i++) {
+  for (let i = 0; i <= 20; i++) {
     await page.waitForSelector("div.f32a99c8d1.f78c3700d2 > button");
     await page.click("div.f32a99c8d1.f78c3700d2 > button");
 
@@ -142,14 +142,9 @@ async function booking() {
     thingsToDo.push(attractionData);
   }
 
-  const bookingData = thingsToDo.reduce((acc, item) => {
-    acc[item.title] = item;
-    return acc;
-  }, {});
-
   await context.close();
 
-  return bookingData;
+  return thingsToDo;
 }
 
 module.exports = {

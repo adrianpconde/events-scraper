@@ -67,7 +67,7 @@ async function tripadvisor() {
   });
   eventsPages.push(currentPage);
 
-  for (let i = 1; i <= 20; i++) {
+  for (let i = 0; i <= 25; i++) {
     await page.click("[aria-label='Next page']");
 
     await delay(2000);
@@ -77,7 +77,6 @@ async function tripadvisor() {
     });
     eventsPages.push(nextPage);
   }
-  console.log(eventsPages);
 
   const events = [];
 
@@ -144,14 +143,9 @@ async function tripadvisor() {
     thingsToDo.push(attraction);
   }
 
-  const tripadvisorData = thingsToDo.reduce((acc, item) => {
-    acc[item.title] = item;
-    return acc;
-  }, {});
-
   await context.close();
 
-  return tripadvisorData;
+  return thingsToDo;
 }
 
 module.exports = {
