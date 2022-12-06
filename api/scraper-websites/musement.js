@@ -32,12 +32,12 @@ async function musement() {
 
   // Taking URL of attractions in the city and each event page link:
 
-  for (let i = 1; i <= 10; i++) {
-    await page.click(
-      "[data-test='searchPage-loadMore-btn']"
-    );
-    await delay(1500);
-  }
+  // for (let i = 1; i <= 10; i++) {
+  //   await page.click(
+  //     "[data-test='searchPage-loadMore-btn']"
+  //   );
+  //   await delay(1500);
+  // }
 
   await page.waitForSelector(".src-content-3JLt");
 

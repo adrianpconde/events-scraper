@@ -71,7 +71,18 @@ async function data() {
 
   const allEvents = eventsData.flat();
 
-  const allData = allEvents.reduce((acc, item) => {
+  const uniqueEvents = [];
+
+  allEvents.forEach(function (event) {
+    let eventTitle = event.title.toLowerCase();
+    if (event.indexOf(eventTitle) === -1) {
+      uniqueEvents.push(event);
+    } else if (event.indexOf(eventTitle) > -1) {
+      console.log(event.title + " already exists.");
+    }
+  });
+
+  const allData = uniqueEvents.reduce((acc, item) => {
     acc[item.title] = item;
     return acc;
   }, {});

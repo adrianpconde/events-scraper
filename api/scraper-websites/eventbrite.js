@@ -48,7 +48,7 @@ async function eventbrite() {
   });
   eventsPages.push(currentPage);
 
-  for (let i = 0; i <= 20; i++) {
+  for (let i = 0; i <= 10; i++) {
     await page.waitForSelector("[data-spec='page-next']");
     await page.click("[data-spec='page-next']");
 
@@ -91,11 +91,7 @@ async function eventbrite() {
   for (let event of allEvents) {
     await page.goto(event);
 
-    await delay(2000);
-
-    await page.waitForSelector(
-      "#root > div > div > div.eds-structure__body > div > div > div > div.eds-fixed-bottom-bar-layout__content > div > main > div > div.event-details > div.event-details__wrapper > div.event-details__main > div:nth-child(1) > h1"
-    );
+    await delay(3000);
 
     const attractionData = await page.evaluate(() => {
       const tmp = {};
@@ -103,11 +99,11 @@ async function eventbrite() {
         "#root > div > div > div.eds-structure__body > div > div > div > div.eds-fixed-bottom-bar-layout__content > div > main > div > div.event-details > div.event-details__wrapper > div.event-details__main > div:nth-child(1) > h1"
       ).textContent;
       try {
-        tmp.description_short = document.querySelector(
+        tmp.description = document.querySelector(
           "div.event-details__main > div:nth-child(1) > p > strong"
         ).textContent;
       } catch (error) {
-        tmp.description_short = "N.A.";
+        tmp.description = "N.A.";
       }
       try {
         tmp.price = document.querySelector(
