@@ -1,28 +1,6 @@
 const puppeteer = require("puppeteer-core");
 
-// Selectors of each city of The Netherland on Tiqets:
-const amsterdam =
-  "div.DestinationsList.flex-box.smooth-touch-scrolling.pt4.DestinationsList--page-section.mb8 > div > a:nth-child(1)";
-const rotterdam =
-  "div.DestinationsList.flex-box.smooth-touch-scrolling.pt4.DestinationsList--page-section.mb8 > div > a:nth-child(2)";
-const groningen =
-  "div.DestinationsList.flex-box.smooth-touch-scrolling.pt4.DestinationsList--page-section.mb8 > div > a:nth-child(3)";
-const theHague =
-  "div.DestinationsList.flex-box.smooth-touch-scrolling.pt4.DestinationsList--page-section.mb8 > div > a:nth-child(4)";
-const kaatsheuvel =
-  "div.DestinationsList.flex-box.smooth-touch-scrolling.pt4.DestinationsList--page-section.mb8 > div > a:nth-child(5)";
-const lisse =
-  "div.DestinationsList.flex-box.smooth-touch-scrolling.pt4.DestinationsList--page-section.mb8 > div > a:nth-child(6)";
-const joure =
-  "div.DestinationsList.flex-box.smooth-touch-scrolling.pt4.DestinationsList--page-section.mb8 > div > a:nth-child(7)";
-const leiden =
-  "div.DestinationsList.flex-box.smooth-touch-scrolling.pt4.DestinationsList--page-section.mb8 > div > a:nth-child(8)";
-
-// Select your city:
-
-const cityName = amsterdam;
-
-async function tiqets() {
+async function tiqets(cityName) {
   const browser = await puppeteer.launch({
     executablePath:
       "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
@@ -44,7 +22,71 @@ async function tiqets() {
     "https://www.tiqets.com/en/the-netherlands-attractions-z50166/?partner=travel_and_destinations"
   );
 
-  await page.click(cityName);
+  // Select the city of The Netherland on Tiqets:
+  let city;
+
+  switch (cityName) {
+    case "amsterdam":
+      city = "https://www.tiqets.com/en/amsterdam-attractions-c75061/";
+      break;
+    case "randstad":
+      city = "https://www.tiqets.com/en/randstad-attractions-r661/";
+      break;
+    case "rotterdam":
+      city = "https://www.tiqets.com/en/rotterdam-attractions-c74895/";
+      break;
+    case "groningen":
+      city = "https://www.tiqets.com/en/groningen-attractions-r1519/";
+      break;
+    case "hague":
+      city = "https://www.tiqets.com/en/the-hague-attractions-c74889/";
+      break;
+    case "kaatsheuvel":
+      city = "https://www.tiqets.com/en/kaatsheuvel-attractions-c952/";
+      break;
+    case "lisse":
+      city = "https://www.tiqets.com/en/lisse-attractions-c260931/";
+      break;
+    case "joure":
+      city = "https://www.tiqets.com/en/joure-attractions-c111418/";
+      break;
+    case "leiden":
+      city = "https://www.tiqets.com/en/leiden-attractions-c74942/";
+      break;
+    case "limburg":
+      city = "https://www.tiqets.com/en/limburg-attractions-r1090/";
+      break;
+    case "sevenum":
+      city = "https://www.tiqets.com/en/sevenum-attractions-c784/";
+      break;
+    case "brabant":
+      city = "https://www.tiqets.com/en/brabant-attractions-r73/";
+      break;
+    case "friesland":
+      city = "https://www.tiqets.com/en/friesland-attractions-r1091/";
+      break;
+    case "emmen":
+      city = "https://www.tiqets.com/en/emmen-attractions-c74999/";
+      break;
+    case "laren ":
+      city = "https://www.tiqets.com/en/laren-attractions-c111406/";
+      break;
+    case "otterlo":
+      city = "https://www.tiqets.com/en/otterlo-attractions-c219719/";
+      break;
+    case "nijmegen":
+      city = "https://www.tiqets.com/en/nijmegen-attractions-c74919/";
+      break;
+    case "zaandam":
+      city = "https://www.tiqets.com/en/zaandam-attractions-c74827/";
+      break;
+    case "kornwerderzand":
+      city = "https://www.tiqets.com/en/kornwerderzand-attractions-c264833/";
+      break;
+    default:
+      console.log(`${cityName} is not available on Tiqets.`);
+  }
+  await page.goto(city);
 
   function delay(time) {
     return new Promise(function (resolve) {
@@ -59,9 +101,7 @@ async function tiqets() {
   // Taking URL of attractions in the city and each event page link:
 
   for (let i = 1; i <= 10; i++) {
-    await page.click(
-      "body > div:nth-child(8) > section:nth-child(6) > div > div > div:nth-child(3) > button"
-    );
+    await page.click(".ShowMoreOfferingsApp__button");
     await delay(1500);
   }
 
@@ -94,29 +134,55 @@ async function tiqets() {
 
     const attractionData = await page.evaluate(() => {
       const tmp = {};
-      tmp.title = document.querySelector(
-        "div.PageHeaderSection__content-inner-wrap.w100.text-white.relative.px16.my24 > h1"
-      ).textContent;
+      tmp.title = document
+        .querySelector(
+          "div.PageHeaderSection__content-inner-wrap.w100.text-white.relative.px16.my24 > h1"
+        )
+        .textContent.trim();
       try {
-        tmp.description = document.querySelector(
-          "#about > div > div:nth-child(1) > div > div > div.location-description.pb16.px16 > p:nth-child(1)"
-        ).textContent;
-      } catch (error) {
-        tmp.description = "N.A.";
-      }
-      try {
-        tmp.price = document.querySelector(
-          "#tickets > div:nth-child(4) > div > article > div > div > div.border-top-solid-1.border-grey500.py8.pl12.pr8.flex-box.flex-center-y.push-down > div > span"
-        ).textContent;
+        tmp.price = document
+          .querySelector(
+            "#tickets > div:nth-child(4) > div > article > div > div > div.border-top-solid-1.border-grey500.py8.pl12.pr8.flex-box.flex-center-y.push-down > div > span"
+          )
+          .textContent.trim();
       } catch (error) {
         tmp.price = "N.A.";
       }
       try {
-        tmp.rating = document.querySelector(
-          "#tickets > div.Grid > div > div.ReviewSummary.mt16.mb16 > div.flex-box.text-ink500.mb8 > span"
-        ).textContent;
+        tmp.description = document
+          .querySelector(
+            "#about > div > div:nth-child(1) > div > div > div.location-description.pb16.px16 > p:nth-child(1)"
+          )
+          .textContent.trim();
+      } catch (error) {
+        tmp.description = "N.A.";
+      }
+      try {
+        tmp.rating = document
+          .querySelector(
+            "#tickets > div.Grid > div > div.ReviewSummary.mt16.mb16 > div.flex-box.text-ink500.mb8 > span"
+          )
+          .textContent.trim();
       } catch (error) {
         tmp.rating = "N.A.";
+      }
+      try {
+        tmp.location = document
+          .querySelector(
+            "#about > div > div:nth-child(3) > div > div > div > div > div.location-block.flex-box.None > div > div > div:nth-child(2)"
+          )
+          .textContent.trim();
+      } catch (error) {
+        tmp.location = "N.A.";
+      }
+      try {
+        tmp.time = document
+          .querySelector(
+            "#about > div > div:nth-child(2) > div > div > div > div > div > table > tbody > tr.pb8.pt8 > td.OpeningHours__column.text-secondary500.pl16.text-right > span"
+          )
+          .textContent.trim();
+      } catch (error) {
+        tmp.time = "N.A.";
       }
       tmp.url = window.location.href;
 

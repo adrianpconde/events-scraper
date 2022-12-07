@@ -1,8 +1,6 @@
 const puppeteer = require("puppeteer-core");
 
-const cityName = "amsterdam";
-
-async function musement() {
+async function musement(cityName) {
   const browser = await puppeteer.launch({
     executablePath:
       "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
@@ -31,13 +29,6 @@ async function musement() {
   await delay(2000);
 
   // Taking URL of attractions in the city and each event page link:
-
-  // for (let i = 1; i <= 10; i++) {
-  //   await page.click(
-  //     "[data-test='searchPage-loadMore-btn']"
-  //   );
-  //   await delay(1500);
-  // }
 
   await page.waitForSelector(".src-content-3JLt");
 
@@ -76,32 +67,47 @@ async function musement() {
         )
         .textContent.trim();
       try {
-        tmp.price = document.querySelector(
-          "#containerEventPage > div > aside > div > div > div.src-shared_component-sections-AsidePrice-body-AGKt.src-shared_component-sections-AsidePrice-asidePriceBody-35oh > div.src-shared_component-components-wrapper-3CIr > div > div.src-shared_component-components-price-2oSX"
-        ).textContent;
+        tmp.price = document
+          .querySelector(
+            "#containerEventPage > div > aside > div > div > div.src-shared_component-sections-AsidePrice-body-AGKt.src-shared_component-sections-AsidePrice-asidePriceBody-35oh > div.src-shared_component-components-wrapper-3CIr > div > div.src-shared_component-components-price-2oSX"
+          )
+          .textContent.trim();
       } catch (error) {
         tmp.price = "N.A.";
       }
       try {
-        tmp.duration = document.querySelector(
-          "#activity-component__block-quick-info > div:nth-child(4) > span:nth-child(3)"
-        ).textContent;
+        tmp.description = document
+          .querySelector(
+            "#activity-component__block_expect > div.src-shared_component-sections-ActivityWhatToExpect-blockBody-eHtU > div.src-shared_component-components-ReadMore-fullText-39ON > div"
+          )
+          .textContent.trim();
       } catch (error) {
-        tmp.duration = "N.A.";
+        tmp.description = "N.A.";
       }
       try {
-        tmp.rating = document.querySelector(
-          "#containerEventPage > div > section > div:nth-child(1) > div.src-shared_component-sections-ActivityHeader-reviewPriceWrapper-2gZb > div.src-shared_component-sections-ActivityHeader-reviewsBox-iPhv > div > div.Widget__rating > div > span:nth-child(1)"
-        ).textContent;
+        tmp.rating = document
+          .querySelector(
+            "#containerEventPage > div > section > div:nth-child(1) > div.src-shared_component-sections-ActivityHeader-reviewPriceWrapper-2gZb > div.src-shared_component-sections-ActivityHeader-reviewsBox-iPhv > div > div.Widget__rating > div > span:nth-child(1)"
+          )
+          .textContent.trim();
       } catch (error) {
         tmp.rating = "N.A.";
       }
       try {
-        tmp.description = document.querySelector(
-          "#activity-component__block_expect > div.src-shared_component-sections-ActivityWhatToExpect-blockBody-eHtU > div.src-shared_component-components-ReadMore-fullText-39ON > div"
-        ).textContent;
+        tmp.location = querySelector(
+          "#activity-component__meeting_point > div.src-shared_component-components-apiHtmlContent-1KaC.src-shared_component-sections-ActivityMap-blockWhereText-1Adp > p"
+        ).textContent.trim();
       } catch (error) {
-        tmp.description = "N.A.";
+        tmp.location = "N.A.";
+      }
+      try {
+        tmp.time = document
+          .querySelector(
+            "#activity-component__block-quick-info > div:nth-child(4) > span:nth-child(3)"
+          )
+          .textContent.trim();
+      } catch (error) {
+        tmp.time = "N.A.";
       }
       tmp.url = window.location.href;
 

@@ -1,8 +1,6 @@
 const puppeteer = require("puppeteer-core");
 
-const cityName = "amsterdam";
-
-async function booking() {
+async function booking(cityName) {
   const browser = await puppeteer.launch({
     executablePath:
       "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
@@ -59,7 +57,11 @@ async function booking() {
   });
   eventsPages.push(currentPage);
 
-  for (let i = 0; i <= 20; i++) {
+  const lastPageNumber = document.querySelector(
+    "body > div:nth-child(2) > div > div > div > div.css-ngwlx1 > div > div.css-1uptleh > div.css-uuk9q1 > div:nth-child(2) > div > nav > div > div.eef2c3ca89 > ol > li:nth-child(6) > button"
+  ).textContent;
+
+  for (let i = 0; i <= lastPageNumber - 1; i++) {
     await page.waitForSelector("div.f32a99c8d1.f78c3700d2 > button");
     await page.click("div.f32a99c8d1.f78c3700d2 > button");
 
@@ -106,33 +108,57 @@ async function booking() {
 
     const attractionData = await page.evaluate(() => {
       const tmp = {};
-      tmp.title = document.querySelector(
-        ".e1f827110f, .css-1uk1gs8"
-      ).textContent;
+      tmp.title = document
+        .querySelector(".e1f827110f, .css-1uk1gs8")
+        .textContent.trim();
       try {
-        tmp.description = document.querySelector(".a0c113411d").textContent;
-      } catch (error) {
-        tmp.description = "N.A.";
-      }
-      try {
-        tmp.price = document.querySelector(
-          "div.css-2ygbp3 > div:nth-child(1) > div > div.ac78a73c96"
-        ).textContent;
+        tmp.price = document
+          .querySelector(
+            "div.css-2ygbp3 > div:nth-child(1) > div > div.ac78a73c96"
+          )
+          .textContent.trim();
       } catch (ex0) {
         try {
-          tmp.price = document.querySelector(
-            "div.css-6psj0n > div:nth-child(1) > div > div.b72a27c85f > span"
-          ).textContent;
+          tmp.price = document
+            .querySelector(
+              "div.css-6psj0n > div:nth-child(1) > div > div.b72a27c85f > span"
+            )
+            .textContent.trim();
         } catch (ex1) {
           tmp.price = "N.A.";
         }
       }
       try {
-        tmp.rating = document.querySelector(
-          "div.a0c113411d.css-1baulvz > strong"
-        ).textContent;
+        tmp.description = document
+          .querySelector(".a0c113411d")
+          .textContent.trim();
+      } catch (error) {
+        tmp.description = "N.A.";
+      }
+      try {
+        tmp.rating = document
+          .querySelector("div.a0c113411d.css-1baulvz > strong")
+          .textContent.trim();
       } catch (error) {
         tmp.rating = "N.A.";
+      }
+      try {
+        tmp.location = document
+          .querySelector(
+            "#attr-product-page-main-content > div.css-1hp67ie > div.css-1mp2v6w > div.a0c113411d.f660aace8b > div > div.f660aace8b.f81ab4937d > div:nth-child(2)"
+          )
+          .textContent.trim();
+      } catch (error) {
+        tmp.location = "N.A.";
+      }
+      try {
+        tmp.time = document
+          .querySelector(
+            "body > div:nth-child(2) > div > div > div > div.css-ngwlx1 > div > div.css-sp37w6 > div > div > div > div > form > div:nth-child(3) > div > div"
+          )
+          .textContent.trim();
+      } catch (error) {
+        tmp.time = "N.A.";
       }
       tmp.url = window.location.href;
 

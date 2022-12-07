@@ -1,8 +1,6 @@
 const puppeteer = require("puppeteer-core");
 
-const cityName = "amsterdam";
-
-async function tripadvisor() {
+async function tripadvisor(cityName) {
   const browser = await puppeteer.launch({
     executablePath:
       "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
@@ -67,7 +65,7 @@ async function tripadvisor() {
   });
   eventsPages.push(currentPage);
 
-  for (let i = 0; i <= 25; i++) {
+  for (let i = 0; i <= 15; i++) {
     await page.click("[aria-label='Next page']");
 
     await delay(2000);
@@ -113,27 +111,49 @@ async function tripadvisor() {
 
     const attraction = await page.evaluate(() => {
       const tmp = {};
-      tmp.title = document.querySelector(".nrbon").textContent;
+      tmp.title = document.querySelector(".nrbon").textContent.trim();
       try {
-        tmp.time = document.querySelector(
-          "div.IxAZL > div > div:nth-child(3) > div._c"
-        ).textContent;
-      } catch (error) {
-        tmp.time = "N.A.";
-      }
-      try {
-        tmp.price = document.querySelector(
-          "div.MQPqk > div > div > div.f.k.O.ncFvv > div.biGQs._P.fiohW.uuBRH"
-        ).textContent;
+        tmp.price = document
+          .querySelector(
+            "div.MQPqk > div > div > div.f.k.O.ncFvv > div.biGQs._P.fiohW.uuBRH"
+          )
+          .textContent.trim();
       } catch (error) {
         tmp.price = "N.A.";
       }
       try {
-        tmp.category = document.querySelector(
-          "div.C > section:nth-child(2) > div > div > div > div > div:nth-child(1) > div:nth-child(3) > div > div > div.fIrGe._T.bgMZj"
-        ).textContent;
+        tmp.description = document
+          .querySelector(
+            "#lithium-root > main > div:nth-child(1) > div.bkycL.z > div:nth-child(2) > div.nhJOT.z > div > div.C > section:nth-child(3) > div > div > div > div.WRRwX.Gg.A > div.IxAZL > div > div._d.MJ > div > div.fIrGe._T.bgMZj > div"
+          )
+          .textContent.trim();
       } catch (error) {
-        tmp.category = "N.A.";
+        tmp.description = "N.A.";
+      }
+      try {
+        tmp.rating = document
+          .querySelector(
+            "#tab-data-qa-reviews-0 > div > div.bdeBj.e > div.C > div > div.f.u.j > div.biGQs._P.fiohW.hzzSG.uuBRH"
+          )
+          .textContent.trim();
+      } catch (error) {
+        tmp.rating = "N.A.";
+      }
+      try {
+        tmp.location = document
+          .querySelector(
+            "#tab-data-WebPresentation_PoiLocationSectionGroup > div > div > div.AcNPX.A > div.ZhNYD > div > div > div > div.MJ > button > span"
+          )
+          .textContent.trim();
+      } catch (error) {
+        tmp.location = "N.A.";
+      }
+      try {
+        tmp.time = document
+          .querySelector("div.IxAZL > div > div:nth-child(3) > div._c")
+          .textContent.trim();
+      } catch (error) {
+        tmp.time = "N.A.";
       }
       tmp.url = window.location.href;
 

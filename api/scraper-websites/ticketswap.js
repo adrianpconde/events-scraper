@@ -1,8 +1,6 @@
 const puppeteer = require("puppeteer-core");
 
-const cityName = "amsterdam";
-
-async function ticketswap() {
+async function ticketswap(cityName) {
   const browser = await puppeteer.launch({
     executablePath:
       "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
@@ -83,23 +81,26 @@ async function ticketswap() {
       try {
         tmp.title = document.querySelector(
           "#__next > header > div.css-voqkl8.ej1og8q2 > h1"
-        ).textContent;
+        ).textContent.trim();
       } catch (error) {
         tmp.title = "N.A.";
       }
+      tmp.price = "Data not available on event page";
+      tmp.description = "Data not available on event page"
+      tmp.description = "Data not available on event page"
       try {
-        tmp.place = document.querySelector(
+        tmp.location = document.querySelector(
           "#__next > header > p.css-hc41ee.ej1og8q3"
-        ).textContent;
+        ).textContent.trim();
       } catch (error) {
-        tmp.place = "N.A";
+        tmp.location = "N.A";
       }
       try {
-        tmp.date = document.querySelector(
+        tmp.time = document.querySelector(
           "#__next > header > p.css-mcvk2t.ej1og8q8"
-        ).textContent;
+        ).textContent.trim();
       } catch (error) {
-        tmp.date = "N.A.";
+        tmp.time = "N.A.";
       }
       tmp.url = window.location.href;
 

@@ -1,8 +1,6 @@
 const puppeteer = require("puppeteer-core");
 
-const cityName = "amsterdam";
-
-async function yelp() {
+async function yelp(cityName) {
   const browser = await puppeteer.launch({
     executablePath:
       "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",

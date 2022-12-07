@@ -1,5 +1,7 @@
 const fs = require("fs");
 
+const cityName = "amsterdam";
+
 const tripadvisorScraper = require("./scraper-websites/tripadvisor");
 const bookingScraper = require("./scraper-websites/booking");
 const yelpScraper = require("./scraper-websites/yelp");
@@ -13,56 +15,56 @@ async function data() {
   const eventsData = [];
 
   try {
-    const bookingData = await bookingScraper.booking();
+    const bookingData = await bookingScraper.booking(cityName);
     eventsData.push(bookingData);
   } catch (error) {
     console.log("An error occured while scraping Booking data");
     console.log(error);
   }
   try {
-    const tripadvisorData = await tripadvisorScraper.tripadvisor();
+    const tripadvisorData = await tripadvisorScraper.tripadvisor(cityName);
     eventsData.push(tripadvisorData);
   } catch (error) {
     console.log("An error occured while scraping Tripadvisor data");
     console.log(error);
   }
+  // try {
+  //   const yelpData = await yelpScraper.yelp(cityName);
+  //   eventsData.push(yelpData);
+  // } catch (error) {
+  //   console.log("An error occured while scraping Yelp data");
+  //   console.log(error);
+  // }
   try {
-    const yelpData = await yelpScraper.yelp();
-    eventsData.push(yelpData);
-  } catch (error) {
-    console.log("An error occured while scraping Yelp data");
-    console.log(error);
-  }
-  try {
-    const tiqetsData = await tiqetsScraper.tiqets();
+    const tiqetsData = await tiqetsScraper.tiqets(cityName);
     eventsData.push(tiqetsData);
   } catch (error) {
     console.log("An error occured while scraping Tiqets data");
     console.log(error);
   }
   try {
-    const eventbriteData = await eventbriteScraper.eventbrite();
+    const eventbriteData = await eventbriteScraper.eventbrite(cityName);
     eventsData.push(eventbriteData);
   } catch (error) {
     console.log("An error occured while scraping Eventbrite data");
     console.log(error);
   }
   try {
-    const ticketswapData = await ticketswapScraper.ticketswap();
+    const ticketswapData = await ticketswapScraper.ticketswap(cityName);
     eventsData.push(ticketswapData);
   } catch (error) {
     console.log("An error occured while scraping Ticketswap data");
     console.log(error);
   }
   try {
-    const musementData = await musementScraper.musement();
+    const musementData = await musementScraper.musement(cityName);
     eventsData.push(musementData);
   } catch (error) {
     console.log("An error occured while scraping Musement data");
     console.log(error);
   }
   try {
-    const ceetizData = await ceetizScraper.ceetiz();
+    const ceetizData = await ceetizScraper.ceetiz(cityName);
     eventsData.push(ceetizData);
   } catch (error) {
     console.log("An error occured while scraping Ceetiz data");
@@ -71,28 +73,25 @@ async function data() {
 
   const allEvents = eventsData.flat();
 
-  const uniqueEvents = [];
+  const uniqueEvents = allEvents.filter(
+    (value, item, event) =>
+      event.findIndex((value2) =>
+        ["location", "price"].every((key) => value2[key] === value[key])
+      ) === item
+  );
 
-  allEvents.forEach(function (event) {
-    let eventTitle = event.title.toLowerCase();
-    if (event.indexOf(eventTitle) === -1) {
-      uniqueEvents.push(event);
-    } else if (event.indexOf(eventTitle) > -1) {
-      console.log(event.title + " already exists.");
+  uniqueEvents.sort(function (a, b) {
+    if (a.title > b.title) {
+      return 1;
     }
+    if (a.title < b.title) {
+      return -1;
+    }
+    return 0;
   });
+  console.log("Events: ", uniqueEvents.length);
 
-  const allData = uniqueEvents.reduce((acc, item) => {
-    acc[item.title] = item;
-    return acc;
-  }, {});
-
-  const eventKeys = Object.keys(allData).sort();
-
-  const orderedData = {};
-  eventKeys.forEach((el) => (orderedData[el] = allData[el]));
-
-  const eventsContent = JSON.stringify(orderedData);
+  const eventsContent = JSON.stringify(uniqueEvents);
   console.log(eventsContent);
 
   fs.writeFile("events.json", eventsContent, "utf8", function (err) {
@@ -104,7 +103,7 @@ async function data() {
     console.log("JSON file has been saved.");
   });
 
-  return orderedData;
+  return uniqueEvents;
 }
 
 data();

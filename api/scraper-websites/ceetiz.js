@@ -1,8 +1,6 @@
 const puppeteer = require("puppeteer-core");
 
-const cityName = "amsterdam";
-
-async function ceetiz() {
+async function ceetiz(cityName) {
   const browser = await puppeteer.launch({
     executablePath:
       "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
@@ -78,22 +76,11 @@ async function ceetiz() {
         tmp.price = "N.A.";
       }
       try {
-        tmp.duration = document
-          .querySelector(
-            "#informations > section > div.flex.flex-row.flex-wrap.items-center.sm\\:pr-5.sm\\:odd\\:border-l.odd\\:border-grey-300.mb-7 > h3.flex.w-full.sm\\:w-1\\/2.p-2.items-start.sm\\:pr-5.mt-2 > div.ml-auto.font-bold.text-right > span"
-          )
+        tmp.description = document
+          .querySelector("#informations > div:nth-child(2) > div:nth-child(2)")
           .textContent.trim();
       } catch (error) {
-        tmp.duration = "N.A.";
-      }
-      try {
-        tmp.time = document
-          .querySelector(
-            "#informations > section > div.flex.flex-row.flex-wrap.items-center.sm\\:pr-5.sm\\:odd\\:border-l.odd\\:border-grey-300.mb-7 > h3.flex.w-full.sm\\:w-1\\/2.p-2.items-start.pr-5.mt-3 > div.ml-auto.font-bold.text-right"
-          )
-          .textContent.trim();
-      } catch (error) {
-        tmp.time = "N.A.";
+        tmp.description = "N.A.";
       }
       try {
         tmp.rating = document
@@ -105,11 +92,20 @@ async function ceetiz() {
         tmp.rating = "N.A.";
       }
       try {
-        tmp.description = document
-          .querySelector("#informations > div:nth-child(2) > div:nth-child(2)")
+        tmp.location = querySelector(
+          "#leaflet-map-top-right-section > div.p-5.w-auto.h-auto.bg-white.rounded-xl.flex.flex-col.justify-between.items-center.gap-y-1 > div > p"
+        ).textContent.trim();
+      } catch (error) {
+        tmp.location = "N.A.";
+      }
+      try {
+        tmp.time = document
+          .querySelector(
+            "#informations > section > div.flex.flex-row.flex-wrap.items-center.sm\\:pr-5.sm\\:odd\\:border-l.odd\\:border-grey-300.mb-7 > h3.flex.w-full.sm\\:w-1\\/2.p-2.items-start.sm\\:pr-5.mt-2 > div.ml-auto.font-bold.text-right > span"
+          )
           .textContent.trim();
       } catch (error) {
-        tmp.description = "N.A.";
+        tmp.time = "N.A.";
       }
 
       tmp.url = window.location.href;

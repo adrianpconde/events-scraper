@@ -1,8 +1,6 @@
 const puppeteer = require("puppeteer-core");
 
-const cityName = "amsterdam";
-
-async function eventbrite() {
+async function eventbrite(cityName) {
   const browser = await puppeteer.launch({
     executablePath:
       "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
@@ -48,7 +46,7 @@ async function eventbrite() {
   });
   eventsPages.push(currentPage);
 
-  for (let i = 0; i <= 10; i++) {
+  for (let i = 0; i <= 5; i++) {
     await page.waitForSelector("[data-spec='page-next']");
     await page.click("[data-spec='page-next']");
 
@@ -97,27 +95,35 @@ async function eventbrite() {
       const tmp = {};
       tmp.title = document.querySelector(
         "#root > div > div > div.eds-structure__body > div > div > div > div.eds-fixed-bottom-bar-layout__content > div > main > div > div.event-details > div.event-details__wrapper > div.event-details__main > div:nth-child(1) > h1"
-      ).textContent;
-      try {
-        tmp.description = document.querySelector(
-          "div.event-details__main > div:nth-child(1) > p > strong"
-        ).textContent;
-      } catch (error) {
-        tmp.description = "N.A.";
-      }
+      ).textContent.trim();
       try {
         tmp.price = document.querySelector(
           "div.event-details > div.event-details__wrapper > div.event-details__aside > div > div.conversion-bar__body > div"
-        ).textContent;
+        ).textContent.trim();
       } catch (error) {
         tmp.price = "N.A.";
       }
       try {
-        tmp.author = document.querySelector(
-          "div.organizer-info__name > a"
-        ).textContent;
+        tmp.description = document.querySelector(
+          "div.event-details__main > div:nth-child(1) > p > strong"
+        ).textContent.trim();
       } catch (error) {
-        tmp.author = "N.A.";
+        tmp.description = "N.A.";
+      }
+      tmp.rating = "N.A.";
+      try {
+        tmp.location = document.querySelector(
+          "#root > div > div > div.eds-structure__body > div > div > div > div.eds-fixed-bottom-bar-layout__content > div > main > div > div.event-details > div.event-details__wrapper > div.event-details__main > section > div.event-details__main-inner > div.detail-list > section:nth-child(2) > div.detail__content > p"
+        ).textContent.trim();
+      } catch (error) {
+        tmp.location = "N.A.";
+      }
+      try {
+        tmp.time = document.querySelector(
+          "#root > div > div > div.eds-structure__body > div > div > div > div.eds-fixed-bottom-bar-layout__content > div > main > div > div.event-details > div.event-details__wrapper > div.event-details__main > section > div.event-details__main-inner > div.detail-list > section:nth-child(1) > div.detail__content > p > time"
+        ).textContent.trim();
+      } catch (error) {
+        tmp.time = "N.A.";
       }
       tmp.url = window.location.href;
 
