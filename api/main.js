@@ -4,7 +4,6 @@ const cityName = "amsterdam";
 
 const tripadvisorScraper = require("./scraper-websites/tripadvisor");
 const bookingScraper = require("./scraper-websites/booking");
-const yelpScraper = require("./scraper-websites/yelp");
 const tiqetsScraper = require("./scraper-websites/tiqets");
 const eventbriteScraper = require("./scraper-websites/eventbrite");
 const ticketswapScraper = require("./scraper-websites/ticketswap");
@@ -28,13 +27,6 @@ async function data() {
     console.log("An error occured while scraping Tripadvisor data");
     console.log(error);
   }
-  // try {
-  //   const yelpData = await yelpScraper.yelp(cityName);
-  //   eventsData.push(yelpData);
-  // } catch (error) {
-  //   console.log("An error occured while scraping Yelp data");
-  //   console.log(error);
-  // }
   try {
     const tiqetsData = await tiqetsScraper.tiqets(cityName);
     eventsData.push(tiqetsData);

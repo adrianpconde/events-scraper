@@ -100,9 +100,28 @@ async function tiqets(cityName) {
 
   // Taking URL of attractions in the city and each event page link:
 
-  for (let i = 1; i <= 10; i++) {
-    await page.click(".ShowMoreOfferingsApp__button");
-    await delay(1500);
+  try {
+    for (let i = 1; i <= 15; i++) {
+      await page.click(".ShowMoreOfferingsApp__button");
+      await delay(1500);
+    }
+  } catch (ex0) {
+    try {
+      for (let i = 1; i <= 10; i++) {
+        await page.click(".ShowMoreOfferingsApp__button");
+        await delay(1500);
+      }
+    } catch (ex1) {
+      try {
+        for (let i = 1; i <= 5; i++) {
+          await page.click(".ShowMoreOfferingsApp__button");
+          await delay(1500);
+        }
+      } catch (error) {
+        await page.click(".ShowMoreOfferingsApp__button");
+        await delay(1500);
+      }
+    }
   }
 
   const events = await page.evaluate(() => {

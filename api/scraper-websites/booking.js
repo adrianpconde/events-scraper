@@ -57,9 +57,12 @@ async function booking(cityName) {
   });
   eventsPages.push(currentPage);
 
-  const lastPageNumber = document.querySelector(
-    "body > div:nth-child(2) > div > div > div > div.css-ngwlx1 > div > div.css-1uptleh > div.css-uuk9q1 > div:nth-child(2) > div > nav > div > div.eef2c3ca89 > ol > li:nth-child(6) > button"
-  ).textContent;
+  const lastPageNumber = await page.evaluate(() => {
+    const maxPage = document.querySelector(
+      "body > div:nth-child(2) > div > div > div > div.css-ngwlx1 > div > div.css-1uptleh > div.css-uuk9q1 > div:nth-child(2) > div > nav > div > div.eef2c3ca89 > ol > li:nth-child(6) > button"
+    ).textContent;
+    return maxPage;
+  });
 
   for (let i = 0; i <= lastPageNumber - 1; i++) {
     await page.waitForSelector("div.f32a99c8d1.f78c3700d2 > button");
